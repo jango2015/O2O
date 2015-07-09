@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:background="@drawable/putao_yp_listitem_seclector"
+    android:orientation="vertical"
+    android:paddingTop="10dp" 
+    android:paddingBottom="10dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
+    <ImageView
+        android:id="@+id/item_img"
+        android:layout_width="@dimen/putao_hotel_img_size"
+        android:layout_height="@dimen/putao_hotel_img_size"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/putao_about_us"
+        android:scaleType="fitXY" />
+
+    <RelativeLayout
+        android:id="@+id/item_middle_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/item_right_content"
+        android:layout_toRightOf="@+id/item_img" >
+
+        <TextView
+            android:id="@+id/item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:ellipsize="end"
+            android:gravity="left"
+            android:text="深圳上岛咖啡大酒店"
+            android:textColor="@color/putao_pt_heavy_black"
+            android:textSize="@dimen/putao_listview_firstline_textsize" />
+
+        <TextView
+            android:id="@+id/item_danbao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_name"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/putao_bg_state_orange"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:singleLine="true"
+            android:text="担保"
+            android:textColor="@color/putao_white"
+            android:textSize="@dimen/putao_listview_secondline_textsize" 
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/item_li"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_name"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="12dp"
+            android:layout_toRightOf="@+id/item_danbao"
+            android:background="@drawable/putao_bg_state_blue"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:singleLine="true"
+            android:text="礼"
+            android:textColor="@color/putao_white"
+            android:textSize="@dimen/putao_listview_secondline_textsize" />
+
+        <TextView
+            android:id="@+id/item_breakfast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_li"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="12dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:singleLine="true"
+            android:text="早餐"
+            android:textColor="@color/putao_text_color_second"
+            android:textSize="@dimen/putao_listview_secondline_textsize" />
+
+        <TextView
+            android:id="@+id/item_bed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_li"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="12dp"
+            android:layout_toRightOf="@+id/item_breakfast"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:singleLine="true"
+            android:text="大床"
+            android:textColor="@color/putao_text_color_second"
+            android:textSize="@dimen/putao_listview_secondline_textsize" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/item_right_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/item_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="￥329"
+            android:textColor="@color/putao_text_color_importance"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/item_money_kefan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:ellipsize="end"
+            android:gravity="right|center_vertical"
+            android:singleLine="true"
+            android:text="可返￥329"
+            android:textColor="@color/putao_text_color_importance"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/item_hotelstate"
+            android:layout_width="80dip"
+            android:layout_height="28dip"
+            android:layout_gravity="right|bottom"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/putao_bg_state_green"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp"
+            android:singleLine="true"
+            android:text="预定"
+            android:textColor="@color/putao_white"
+            android:textSize="@dimen/putao_listview_firstline_textsize" />
+    </LinearLayout>
+
+</RelativeLayout>

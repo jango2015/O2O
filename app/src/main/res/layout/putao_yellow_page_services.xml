@@ -1,0 +1,1175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/putao_app_bg">
+
+    <include layout="@layout/putao_header_view" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+    	android:background="@color/putao_white"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:splitMotionEvents="false"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/putao_pt_btn_click" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/putao_services_special"
+                    android:textColor="@color/putao_pt_heavy_black"
+                    android:textSize="@dimen/putao_listview_firstline_textsize" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="53dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:splitMotionEvents="false"
+                android:baselineAligned="false"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/services_110"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/putao_yp_listitem_seclector"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.7"
+                        android:gravity="center_vertical"
+                        android:text="@string/putao_services_110_name"
+                        android:textColor="@color/putao_theme"
+                        android:textSize="@dimen/putao_BottomTextSize" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/putao_services_110_value"
+                        android:textColor="@color/putao_yellow_page_second_category_color"
+                        android:textSize="@dimen/putao_navigator_title" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/services_119"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/putao_yp_listitem_seclector"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.7"
+                        android:gravity="center_vertical"
+                        android:text="@string/putao_services_119_name"
+                        android:textColor="@color/putao_theme"
+                        android:textSize="@dimen/putao_BottomTextSize" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/putao_services_119_value"
+                        android:textColor="@color/putao_yellow_page_second_category_color"
+                        android:textSize="@dimen/putao_navigator_title" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/putao_pt_line_light_gray"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="53dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:splitMotionEvents="false"
+                android:baselineAligned="false"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/services_120"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/putao_yp_listitem_seclector"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.7"
+                        android:gravity="center_vertical"
+                        android:text="@string/putao_services_120_name"
+                        android:textColor="@color/putao_theme"
+                        android:textSize="@dimen/putao_BottomTextSize" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/putao_services_120_value"
+                        android:textColor="@color/putao_yellow_page_second_category_color"
+                        android:textSize="@dimen/putao_navigator_title" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/services_train"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/putao_yp_listitem_seclector"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.7"
+                        android:gravity="center_vertical"
+                        android:text="@string/putao_services_train_name"
+                        android:textColor="@color/putao_theme"
+                        android:textSize="@dimen/putao_BottomTextSize" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/putao_services_train_value"
+                        android:textColor="@color/putao_yellow_page_second_category_color"
+                        android:textSize="@dimen/putao_navigator_title" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/putao_pt_line_light_gray"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="53dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:splitMotionEvents="false"
+                android:baselineAligned="false"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/services_122"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/putao_yp_listitem_seclector"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.7"
+                        android:gravity="center_vertical"
+                        android:text="@string/putao_services_122_name"
+                        android:textColor="@color/putao_theme"
+                        android:textSize="@dimen/putao_BottomTextSize" />
+
+                    <TextView
+                        
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/putao_services_122_value"
+                        android:textColor="@color/putao_yellow_page_second_category_color"
+                        android:textSize="@dimen/putao_navigator_title" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/services_114"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/putao_yp_listitem_seclector"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.7"
+                        android:gravity="center_vertical"
+                        android:text="@string/putao_services_114_name"
+                        android:textColor="@color/putao_theme"
+                        android:textSize="@dimen/putao_BottomTextSize" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/putao_services_114_value"
+                        android:textColor="@color/putao_yellow_page_second_category_color"
+                        android:textSize="@dimen/putao_navigator_title" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/putao_pt_line_light_gray"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="53dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:splitMotionEvents="false"
+                android:baselineAligned="false"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/services_117"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/putao_yp_listitem_seclector"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.7"
+                        android:gravity="center_vertical"
+                        android:text="@string/putao_services_117_name"
+                        android:textColor="@color/putao_theme"
+                        android:textSize="@dimen/putao_BottomTextSize" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/putao_services_117_value"
+                        android:textColor="@color/putao_yellow_page_second_category_color"
+                        android:textSize="@dimen/putao_navigator_title" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/services_weather"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/putao_yp_listitem_seclector"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.7"
+                        android:gravity="center_vertical"
+                        android:text="@string/putao_services_weather_name"
+                        android:textColor="@color/putao_theme"
+                        android:textSize="@dimen/putao_BottomTextSize" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/putao_services_weather_value"
+                        android:textColor="@color/putao_yellow_page_second_category_color"
+                        android:textSize="@dimen/putao_navigator_title" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/putao_pt_line_light_gray"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="53dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:splitMotionEvents="false"
+                android:baselineAligned="false"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/services_184"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/putao_yp_listitem_seclector"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.7"
+                        android:gravity="center_vertical"
+                        android:text="@string/putao_services_184_name"
+                        android:textColor="@color/putao_theme"
+                        android:textSize="@dimen/putao_BottomTextSize" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/putao_services_184_value"
+                        android:textColor="@color/putao_yellow_page_second_category_color"
+                        android:textSize="@dimen/putao_navigator_title" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/services_999"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/putao_yp_listitem_seclector"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.7"
+                        android:gravity="center_vertical"
+                        android:text="@string/putao_services_999_name"
+                        android:textColor="@color/putao_theme"
+                        android:textSize="@dimen/putao_BottomTextSize" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/putao_services_999_value"
+                        android:textColor="@color/putao_yellow_page_second_category_color"
+                        android:textSize="@dimen/putao_navigator_title" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/putao_pt_line_light_gray"
+                android:visibility="visible" />
+            
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="53dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:splitMotionEvents="false"
+                android:baselineAligned="false"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/services_water"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/putao_yp_listitem_seclector"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.7"
+                        android:gravity="center_vertical"
+                        android:text="@string/putao_services_water_name"
+                        android:textColor="@color/putao_theme"
+                        android:textSize="@dimen/putao_BottomTextSize" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/putao_services_water_value"
+                        android:textColor="@color/putao_yellow_page_second_category_color"
+                        android:textSize="@dimen/putao_navigator_title" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/services_high"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/putao_yp_listitem_seclector"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.7"
+                        android:gravity="center_vertical"
+                        android:text="@string/putao_services_high_name"
+                        android:textColor="@color/putao_theme"
+                        android:textSize="@dimen/putao_BottomTextSize" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/putao_services_high_value"
+                        android:textColor="@color/putao_yellow_page_second_category_color"
+                        android:textSize="@dimen/putao_navigator_title" />
+                </LinearLayout>
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/putao_pt_btn_click" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/putao_services_commumication"
+                    android:textColor="@color/putao_pt_heavy_black"
+                    android:textSize="@dimen/putao_listview_firstline_textsize" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="53dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:baselineAligned="false"
+                android:splitMotionEvents="false"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/services_china_mobile"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/putao_yp_listitem_seclector"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.7"
+                        android:gravity="center_vertical"
+                        android:text="@string/putao_services_china_mobile_name"
+                        android:textColor="@color/putao_theme"
+                        android:textSize="@dimen/putao_BottomTextSize" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/putao_services_china_mobile_value"
+                        android:textColor="@color/putao_yellow_page_second_category_color"
+                        android:textSize="@dimen/putao_navigator_title" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/services_china_unicom"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/putao_yp_listitem_seclector"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.7"
+                        android:gravity="center_vertical"
+                        android:text="@string/putao_services_china_unicom_name"
+                        android:textColor="@color/putao_theme"
+                        android:textSize="@dimen/putao_BottomTextSize" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/putao_services_china_unicom_value"
+                        android:textColor="@color/putao_yellow_page_second_category_color"
+                        android:textSize="@dimen/putao_navigator_title" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/putao_pt_line_light_gray"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="53dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:splitMotionEvents="false"
+                android:baselineAligned="false"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/services_china_telecom"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/putao_yp_listitem_seclector"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.7"
+                        android:gravity="center_vertical"
+                        android:text="@string/putao_services_china_telecom_name"
+                        android:textColor="@color/putao_theme"
+                        android:textSize="@dimen/putao_BottomTextSize" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/putao_services_china_telecom_value"
+                        android:textColor="@color/putao_yellow_page_second_category_color"
+                        android:textSize="@dimen/putao_navigator_title" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/services_china_railway"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/putao_yp_listitem_seclector"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.7"
+                        android:gravity="center_vertical"
+                        android:text="@string/putao_services_china_railway_name"
+                        android:textColor="@color/putao_theme"
+                        android:textSize="@dimen/putao_BottomTextSize" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/putao_services_china_railway_value"
+                        android:textColor="@color/putao_yellow_page_second_category_color"
+                        android:textSize="@dimen/putao_navigator_title" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/putao_pt_line_light_gray"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="53dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:splitMotionEvents="false"
+                android:baselineAligned="false"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/services_china_netcom"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/putao_yp_listitem_seclector"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.7"
+                        android:gravity="center_vertical"
+                        android:text="@string/putao_services_china_netcom_name"
+                        android:textColor="@color/putao_theme"
+                        android:textSize="@dimen/putao_BottomTextSize" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/putao_services_china_netcom_value"
+                        android:textColor="@color/putao_yellow_page_second_category_color"
+                        android:textSize="@dimen/putao_navigator_title" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/services_12580"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/putao_yp_listitem_seclector"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.7"
+                        android:gravity="center_vertical"
+                        android:text="@string/putao_services_12580_name"
+                        android:textColor="@color/putao_theme"
+                        android:textSize="@dimen/putao_BottomTextSize" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/putao_services_12580_value"
+                        android:textColor="@color/putao_yellow_page_second_category_color"
+                        android:textSize="@dimen/putao_navigator_title" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/putao_pt_line_light_gray"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="53dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:splitMotionEvents="false"
+                android:baselineAligned="false"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/services_12530"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/putao_yp_listitem_seclector"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.7"
+                        android:gravity="center_vertical"
+                        android:text="@string/putao_services_12530_name"
+                        android:textColor="@color/putao_theme"
+                        android:textSize="@dimen/putao_BottomTextSize" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/putao_services_12530_value"
+                        android:textColor="@color/putao_yellow_page_second_category_color"
+                        android:textSize="@dimen/putao_navigator_title" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/services_broadband"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/putao_yp_listitem_seclector"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.7"
+                        android:gravity="center_vertical"
+                        android:text="@string/putao_services_broadband_name"
+                        android:textColor="@color/putao_theme"
+                        android:textSize="@dimen/putao_BottomTextSize" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/putao_services_broadband_value"
+                        android:textColor="@color/putao_yellow_page_second_category_color"
+                        android:textSize="@dimen/putao_navigator_title" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/putao_pt_line_light_gray"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="53dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:splitMotionEvents="false"
+                android:baselineAligned="false"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/services_television"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/putao_yp_listitem_seclector"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.7"
+                        android:gravity="center_vertical"
+                        android:text="@string/putao_services_television_name"
+                        android:textColor="@color/putao_theme"
+                        android:textSize="@dimen/putao_BottomTextSize" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/putao_services_television_value"
+                        android:textColor="@color/putao_yellow_page_second_category_color"
+                        android:textSize="@dimen/putao_navigator_title" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/services_IP"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/putao_yp_listitem_seclector"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.7"
+                        android:gravity="center_vertical"
+                        android:text="@string/putao_services_IP_name"
+                        android:textColor="@color/putao_theme"
+                        android:textSize="@dimen/putao_BottomTextSize" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/putao_services_IP_value"
+                        android:textColor="@color/putao_yellow_page_second_category_color"
+                        android:textSize="@dimen/putao_navigator_title" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/putao_pt_btn_click" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/putao_services_complaint"
+                    android:textColor="@color/putao_pt_heavy_black"
+                    android:textSize="@dimen/putao_listview_firstline_textsize" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="53dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:splitMotionEvents="false"
+                android:baselineAligned="false"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/services_consumer"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/putao_yp_listitem_seclector"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.7"
+                        android:gravity="center_vertical"
+                        android:text="@string/putao_services_comsumer_name"
+                        android:textColor="@color/putao_theme"
+                        android:textSize="@dimen/putao_BottomTextSize" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/putao_services_comsumer_value"
+                        android:textColor="@color/putao_yellow_page_second_category_color"
+                        android:textSize="@dimen/putao_navigator_title" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/services_mayor"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/putao_yp_listitem_seclector"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.7"
+                        android:gravity="center_vertical"
+                        android:text="@string/putao_services_mayor_name"
+                        android:textColor="@color/putao_theme"
+                        android:textSize="@dimen/putao_BottomTextSize" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/putao_services_mayor_value"
+                        android:textColor="@color/putao_yellow_page_second_category_color"
+                        android:textSize="@dimen/putao_navigator_title" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/putao_pt_line_light_gray"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="53dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:splitMotionEvents="false"
+                android:baselineAligned="false"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/services_taxation"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/putao_yp_listitem_seclector"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.7"
+                        android:gravity="center_vertical"
+                        android:text="@string/putao_services_taxation_name"
+                        android:textColor="@color/putao_theme"
+                        android:textSize="@dimen/putao_BottomTextSize" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/putao_services_taxation_value"
+                        android:textColor="@color/putao_yellow_page_second_category_color"
+                        android:textSize="@dimen/putao_navigator_title" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/services_institution"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/putao_yp_listitem_seclector"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.7"
+                        android:gravity="center_vertical"
+                        android:text="@string/putao_services_institution_name"
+                        android:textColor="@color/putao_theme"
+                        android:textSize="@dimen/putao_BottomTextSize" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/putao_services_institution_value"
+                        android:textColor="@color/putao_yellow_page_second_category_color"
+                        android:textSize="@dimen/putao_navigator_title" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/putao_pt_line_light_gray"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="53dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:splitMotionEvents="false"
+                android:baselineAligned="false"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/services_quality"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/putao_yp_listitem_seclector"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.7"
+                        android:gravity="center_vertical"
+                        android:text="@string/putao_services_quality_name"
+                        android:textColor="@color/putao_theme"
+                        android:textSize="@dimen/putao_BottomTextSize" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/putao_services_quality_value"
+                        android:textColor="@color/putao_yellow_page_second_category_color"
+                        android:textSize="@dimen/putao_navigator_title" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/services_safeguarding"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/putao_yp_listitem_seclector"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.7"
+                        android:gravity="center_vertical"
+                        android:text="@string/putao_services_safeguarding_name"
+                        android:textColor="@color/putao_theme"
+                        android:textSize="@dimen/putao_BottomTextSize" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/putao_services_safeguarding_value"
+                        android:textColor="@color/putao_yellow_page_second_category_color"
+                        android:textSize="@dimen/putao_navigator_title" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/putao_pt_line_light_gray"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="53dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:splitMotionEvents="false"
+                android:baselineAligned="false"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/services_organization"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/putao_yp_listitem_seclector"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.7"
+                        android:gravity="center_vertical"
+                        android:text="@string/putao_services_organization_name"
+                        android:textColor="@color/putao_theme"
+                        android:textSize="@dimen/putao_BottomTextSize" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/putao_services_organization_value"
+                        android:textColor="@color/putao_yellow_page_second_category_color"
+                        android:textSize="@dimen/putao_navigator_title" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/services_environment"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/putao_yp_listitem_seclector"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.7"
+                        android:gravity="center_vertical"
+                        android:text="@string/putao_services_environment_name"
+                        android:textColor="@color/putao_theme"
+                        android:textSize="@dimen/putao_BottomTextSize" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/putao_services_environment_value"
+                        android:textColor="@color/putao_yellow_page_second_category_color"
+                        android:textSize="@dimen/putao_navigator_title" />
+                </LinearLayout>
+            </LinearLayout>
+            
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/putao_pt_line_light_gray"
+                android:visibility="visible" />
+            
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="53dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:splitMotionEvents="false"
+                android:baselineAligned="false"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/services_price"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/putao_yp_listitem_seclector"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.7"
+                        android:gravity="center_vertical"
+                        android:text="@string/putao_services_price_name"
+                        android:textColor="@color/putao_theme"
+                        android:textSize="@dimen/putao_BottomTextSize" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/putao_services_price_value"
+                        android:textColor="@color/putao_yellow_page_second_category_color"
+                        android:textSize="@dimen/putao_navigator_title" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/services_rights"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/putao_yp_listitem_seclector"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.7"
+                        android:gravity="center_vertical"
+                        android:text="@string/putao_services_rights_name"
+                        android:textColor="@color/putao_theme"
+                        android:textSize="@dimen/putao_BottomTextSize" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/putao_services_rights_value"
+                        android:textColor="@color/putao_yellow_page_second_category_color"
+                        android:textSize="@dimen/putao_navigator_title" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

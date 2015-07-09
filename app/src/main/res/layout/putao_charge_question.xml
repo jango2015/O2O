@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- <LinearLayout -->
+    <!-- android:id="@+id/head_layout" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content"> -->
+
+
+    <!-- <include layout="@layout/putao_header_view" /> -->
+    <!-- </LinearLayout> -->
+
+    <LinearLayout
+        android:id="@+id/charge_result_serial_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/head_layout"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingStart="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="10dp"
+        android:paddingEnd="10dp"
+        android:paddingTop="15dp" >
+
+        <TextView
+            android:id="@+id/question_a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:padding="5dp"
+            android:text="@string/putao_charge_question_a" />
+
+        <TextView
+            android:id="@+id/question_b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:padding="5dp"
+            android:text="@string/putao_charge_question_b" />
+
+        <TextView
+            android:id="@+id/question_c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:padding="5dp"
+            android:text="@string/putao_charge_question_c" />
+
+        <TextView
+            android:id="@+id/question_d"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:autoLink="phone"
+            android:padding="5dp"
+            android:text="@string/putao_charge_question_d" />
+
+        <TextView
+            android:id="@+id/question_e"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:padding="5dp" />
+        <!-- android:text="@string/putao_charge_question_e" -->
+
+        <TextView
+            android:id="@+id/question_f"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:padding="5dp" />
+        <!-- android:text="@string/putao_charge_question_f" -->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical" >
+
+        <TextView
+            style="@style/putao_List_SIGNLE_ITEM_SECOND_TEXT_STYLE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/putao_traffic_tips_provider" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/putao_icon_cooperate_gyxj" />
+    </LinearLayout>
+
+</RelativeLayout>

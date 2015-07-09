@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/head" 
+        layout="@layout/putao_my_account_layout_body" />
+
+    <ScrollView
+        android:id="@+id/layout_scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/head"
+        android:orientation="vertical" >
+
+        <include
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/putao_my_layout_body" />
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/back_layout"
+        android:layout_width="@dimen/putao_title_bar_back_layout_width"
+        android:layout_marginTop="@dimen/putao_top_bar_distance_height" 
+        android:layout_height="48dp"
+        android:background="@drawable/putao_header_view_left_bg" >
+
+        <ImageView
+            android:id="@id/back"
+            android:layout_width="@dimen/putao_title_bar_back_arrow_widthandheight"
+            android:layout_height="@dimen/putao_title_bar_back_arrow_widthandheight"
+            android:contentDescription="@string/putao_about_us"
+            android:duplicateParentState="true"
+            android:layout_centerInParent="true"
+            android:scaleType="center"
+            android:src="@drawable/putao_icon_left_arrow" />
+    </RelativeLayout>
+</RelativeLayout>

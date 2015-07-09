@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <!-- 标准TextView控件 -->
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="标准TextView控件"/>
+    <!-- 强调大字体TextView控件 -->
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="强调大字体TextView控件"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+    <!-- 灰色说明TextView控件 -->
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="灰色说明TextView控件"
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+    <!-- 小字体说明TextView控件 -->
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="小字体说明TextView控件"
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+    <!-- 标准button控件 -->
+    <Button 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/putao_btn_margin_size"
+        android:text="标准button控件"/>
+    <!-- 白色button控件 -->
+   <Button 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="白色button控件"
+        android:layout_margin="@dimen/putao_btn_margin_size"
+        android:textColor="@color/putao_text_color_importance"
+        android:background="@drawable/putao_click_btn_bg_white"/>
+   <!-- 分组标签，需要自行设置标签文字, 通过findViewById(R.id.tvTag)找到该TextView -->
+   <include 
+       layout="@layout/putao_tag_view"/>
+   <!-- ListView Item Style -->
+   <!-- 参照style里 -->
+   <RelativeLayout 
+       style="@style/putao_List_SINGLE_ITEM_Style">
+       <TextView 
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_centerVertical="true"
+           android:layout_alignParentLeft="true"
+           style="@style/putao_List_SIGNLE_ITEM_PRIMARY_TEXT_STYLE"
+           android:text="单行listVIew"/>
+       <TextView 
+           style="@style/putao_List_SIGNLE_ITEM_SECOND_TEXT_STYLE"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+           android:text="右侧文字说明文字"/>
+   </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/putao_app_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/favorite_parent_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_below="@id/header"
+        android:background="@color/putao_pt_light_gray"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/favorite_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/putao_white"
+            android:scrollbars="none"
+            android:visibility="gone" >
+        </ListView>
+
+        <RelativeLayout
+            android:id="@+id/no_favorite_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/putao_pt_light_gray"
+            android:padding="@dimen/putao_express_item_padding"
+            android:visibility="gone" >
+
+            <View
+                android:id="@+id/favorite_center_view"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_centerVertical="true" />
+
+            <ImageView
+                android:id="@+id/favorite_info_imageview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/favorite_center_view"
+                android:layout_centerHorizontal="true"
+                android:contentDescription="@string/putao_app_name"
+                android:src="@drawable/putao_icon_logo_tishi" />
+
+            <TextView
+                android:id="@+id/favorite_info_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/favorite_center_view"
+                android:layout_centerHorizontal="true"
+                android:singleLine="true"
+                android:text="@string/putao_yellow_page_favorite_no_data"
+                android:textColor="@color/putao_express_result_no_data_info"
+                android:textSize="@dimen/putao_express_result_no_data_info_text_size" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

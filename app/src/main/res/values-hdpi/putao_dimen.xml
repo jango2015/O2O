@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="putao_yp_home_gridview_textsize">11sp</dimen>
+    <dimen name="putao_yp_home_listview_item_margin_left">5dp</dimen>
+    <dimen name="putao_yp_home_listview_item_margin_right">5dp</dimen>
+    <dimen name="putao_yp_home_listview_hot_icon_margin_left">2dp</dimen>
+    <dimen name="putao_yp_home_listview_textsize">12sp</dimen>
+    <dimen name="putao_yp_home_second_item_height">48dp</dimen>
+
+</resources>

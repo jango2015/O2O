@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/plug_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/putao_screen_background_light"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/search_content"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/putao_homepage_search_layout_height"
+        android:layout_marginLeft="@dimen/putao_homepage_searchleftright_padding"
+        android:layout_marginRight="@dimen/putao_homepage_searchleftright_padding"
+        android:layout_marginTop="@dimen/putao_homepage_searchtop_padding"
+        android:layout_marginBottom="@dimen/putao_homepage_searchbottom_padding"
+        android:background="@drawable/putao_bg_white_select_h"
+        android:drawableLeft="@drawable/putao_icon_select"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:gravity="center_vertical"
+        android:hint="@string/putao_homepage_search_contact_hint"
+        android:longClickable="false"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:singleLine="true"
+        android:textColorHint="#7b7b7b"
+        android:textSize="12sp" />
+
+   <!--  <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/putao_divider_line_size"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="10dp"
+        android:background="#dcdcdc" /> -->
+
+    <so.contacts.hub.widget.AdOperatLayout
+        android:id="@+id/adlayout_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/putao_adlayout_height"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:visibility="gone" >
+    </so.contacts.hub.widget.AdOperatLayout>
+
+    <!-- <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/putao_divider_line_size"
+        android:layout_gravity="center_vertical"
+        android:background="#dcdcdc" /> -->
+
+    <TextView
+        android:id="@+id/first_cateory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:singleLine="true"
+        android:textColor="@color/putao_black"
+        android:visibility="gone" />
+
+    <so.contacts.hub.widget.MyGridView
+        android:id="@+id/first_gridView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:listSelector="@color/putao_transparent"
+        android:numColumns="4"
+        android:paddingBottom="20dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="10dp"
+        android:scrollbars="none"
+        android:scrollingCache="false"
+        android:splitMotionEvents="false"
+        android:verticalSpacing="24dp" />
+
+    <TextView
+        android:id="@+id/second_cateory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:singleLine="true"
+        android:textColor="@color/putao_black"
+        android:visibility="gone" />
+    <!-- 黄页剩下全部 -->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/putao_divider_line_size"
+        android:layout_gravity="center_vertical"
+        android:background="@color/putao_yellow_page_line_color" />
+
+    <!-- android:background="@drawable/bg_white" -->
+
+    <so.contacts.hub.widget.AdOperatLayout
+        android:id="@+id/adlayout_middle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/putao_adlayout_height"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:visibility="gone" >
+    </so.contacts.hub.widget.AdOperatLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/putao_divider_line_size"
+        android:layout_gravity="center_vertical"
+        android:background="@color/putao_yellow_page_line_color" />
+
+    <so.contacts.hub.widget.MyListView
+        android:id="@+id/second_gridView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/putao_yellow_page_line_color"
+        android:dividerHeight="@dimen/putao_divider_line_size"
+        android:listSelector="@color/putao_transparent"
+        android:scrollbars="none"
+        android:splitMotionEvents="false" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/putao_divider_line_size"
+        android:layout_gravity="center_vertical"
+        android:background="@color/putao_yellow_page_line_color" />
+
+    <so.contacts.hub.widget.AdOperatLayout
+        android:id="@+id/adlayout_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/putao_adlayout_height"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:visibility="gone" >
+    </so.contacts.hub.widget.AdOperatLayout>
+
+</LinearLayout>

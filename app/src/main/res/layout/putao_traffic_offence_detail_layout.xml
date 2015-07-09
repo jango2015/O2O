@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/putao_btn_margin_size"
+        android:layout_marginRight="@dimen/putao_btn_margin_size"
+        android:background="@drawable/putao_bg_card_weizhang"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/putao_btn_margin_size"
+            android:layout_marginRight="@dimen/putao_btn_margin_size"
+            android:layout_marginTop="6dp"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/putao_icon_order_wz" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="违章"
+                android:textColor="@color/putao_white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="@dimen/putao_btn_margin_size"
+            android:layout_marginRight="@dimen/putao_btn_margin_size"
+            android:layout_weight="3"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/putao_traffic_detail_carnumber"
+                    android:textColor="#88ffffff"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/car_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/putao_white"
+                    android:textSize="@dimen/putao_express_item_text_size" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/punish_points"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="right|center_vertical"
+                android:textColor="@color/putao_white"
+                android:textSize="30sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/punish_money"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="@dimen/putao_btn_margin_size"
+            android:layout_marginRight="@dimen/putao_btn_margin_size"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:textColor="@color/putao_common_red" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/putao_btn_margin_size"
+        android:layout_marginRight="@dimen/putao_btn_margin_size"
+        android:layout_marginTop="@dimen/putao_dialog_head_textsize"
+        android:background="@drawable/putao_bg_list_card"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/putao_yp_detail_item_second_text_size"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/putao_btn_margin_size"
+                android:layout_marginRight="@dimen/putao_btn_margin_size"
+                android:gravity="center_vertical"
+                android:text="@string/traffic_offence_location" />
+
+            <TextView
+                android:id="@+id/offence_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/putao_btn_margin_size"
+                android:layout_marginRight="@dimen/putao_btn_margin_size"
+                android:gravity="center_vertical"
+                android:textColor="@color/putao_text_color_green" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/putao_yp_detail_item_second_text_size"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/putao_btn_margin_size"
+                android:layout_marginRight="@dimen/putao_btn_margin_size"
+                android:gravity="center_vertical"
+                android:text="@string/traffic_offence_rules" />
+
+            <TextView
+                android:id="@+id/offence_rules"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/putao_btn_margin_size"
+                android:layout_marginRight="@dimen/putao_btn_margin_size"
+                android:gravity="center_vertical" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/putao_dialog_head_textsize"
+            android:layout_marginTop="@dimen/putao_yp_detail_item_second_text_size"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/putao_btn_margin_size"
+                android:layout_marginRight="@dimen/putao_btn_margin_size"
+                android:gravity="center_vertical"
+                android:text="@string/traffic_offence_time" />
+
+            <TextView
+                android:id="@+id/offence_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/putao_btn_margin_size"
+                android:layout_marginRight="@dimen/putao_btn_margin_size"
+                android:gravity="center_vertical" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/query_all_offence"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/putao_btn_margin_size"
+        android:text="@string/query_all_traffic_offence_records" />
+
+</LinearLayout>

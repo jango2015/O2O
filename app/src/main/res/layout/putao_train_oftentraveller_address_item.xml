@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/travellerinfo_item_layout"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:layout_marginBottom="10dp"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/putao_bg_yellow_item_single"
+    android:padding="10dp"
+    android:descendantFocusability="afterDescendants">
+
+    <TextView
+        android:id="@+id/traveller_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:gravity="center_vertical"
+        android:text="姓名"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/traveller_name"
+        android:focusable="false"
+        android:gravity="center_vertical"
+        android:paddingTop="2dp"
+        android:text="XXXXXXXXXXX"
+        android:textColor="@color/putao_express_result_no_data_info" />
+
+    <ImageView
+        android:id="@+id/edit_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:focusable="false"
+        android:src="@drawable/putao_icon_edit" />
+
+</RelativeLayout>

@@ -1,0 +1,33 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/putao_white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/head_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/putao_app_bg" >
+
+        <include layout="@layout/putao_header_view" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/putao_white"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/category_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:splitMotionEvents="false" >
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

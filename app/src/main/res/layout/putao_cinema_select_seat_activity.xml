@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <include layout="@layout/putao_header_view" />
+        
+        <LinearLayout
+            android:id="@+id/main_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="80dp"
+            android:layout_marginLeft="@dimen/putao_activity_horizontal_margin"
+            android:layout_marginRight="@dimen/putao_activity_horizontal_margin"
+            android:gravity="center_vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/film_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/film_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/film_name"
+                    android:layout_alignTop="@id/film_name"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_toRightOf="@id/film_name"
+                    android:background="@drawable/putao_bg_state_blue"
+                    android:gravity="center"
+                    android:lineSpacingExtra="0dp"
+                    android:textColor="#ffffff"
+                    android:visibility="invisible"
+                    android:textSize="@dimen/putao_text_tertiary_size" />
+
+                <TextView
+                    android:id="@+id/film_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/film_name"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/putao_text_color_second"
+                    android:textSize="@dimen/putao_text_tertiary_size" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/film_confirm"
+                android:visibility="invisible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/putao_activity_horizontal_margin"
+            android:layout_marginRight="@dimen/putao_activity_horizontal_margin"
+            android:layout_weight="0"
+            android:background="@color/putao_tag_group_divider_color" />
+
+        <LinearLayout
+            android:id="@+id/film_seat"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginLeft="@dimen/putao_activity_horizontal_margin"
+            android:layout_marginRight="@dimen/putao_activity_horizontal_margin"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/putao_seat_select_none"
+                android:textColor="@color/putao_text_color_second"
+                android:textSize="@dimen/putao_text_tertiary_size" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#564c43" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_weight="0" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical" >
+
+                        <ImageView
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_marginRight="2dp"
+                            android:src="@drawable/putao_seat_normal" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text="@string/putao_can_select"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/putao_text_tertiary_size" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical" >
+
+                        <ImageView
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_marginRight="2dp"
+                            android:src="@drawable/putao_seat_checked"
+                            android:textSize="@dimen/putao_text_tertiary_size" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text="@string/putao_selected"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/putao_text_tertiary_size" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical" >
+
+                        <ImageView
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_marginRight="2dp"
+                            android:src="@drawable/putao_seat_lock" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text="@string/putao_sold"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/putao_text_tertiary_size" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical" >
+
+                        <ImageView
+                            android:layout_width="23dp"
+                            android:layout_height="10dp"
+                            android:layout_marginRight="2dp"
+                            android:src="@drawable/putao_seat_lover" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text="@string/putao_seat_lover"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/putao_text_tertiary_size" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical" >
+
+                        <ImageView
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_marginRight="2dp"
+                            android:src="@drawable/putao_seat_guodao" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text="@string/putao_seat_zl"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/putao_text_tertiary_size" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginRight="35dp"
+                    android:layout_weight="0"
+                    android:gravity="center_vertical" >
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="1"
+                        android:background="#d0d0d0" />
+
+                    <TextView
+                        android:id="@+id/screen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:background="@drawable/putao_seat_yingmo"
+                        android:gravity="bottom"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/putao_text_tertiary_size" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="1"
+                        android:background="#d0d0d0" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <so.contacts.hub.thirdparty.cinema.widget.SelectSeatView
+                        android:id="@+id/select_seat"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:layout_weight="0"
+                    android:drawableLeft="@drawable/putao_icon_cooperate_gwl"
+                    android:gravity="center"
+                    android:text="@string/putao_movie_bottom_tip"
+                    android:textColor="@color/putao_text_color_second"
+                    android:textSize="@dimen/putao_subtitle_content" />
+            </LinearLayout>
+
+            <so.contacts.hub.thirdparty.cinema.widget.SelectSeatThumView
+                android:id="@+id/select_seat_small"
+                android:layout_width="@dimen/ss_seat_thum_size_w"
+                android:layout_height="wrap_content"
+                android:background="#bb333333"
+                android:visibility="invisible" />
+        </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/network_exception_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone" >
+        <include layout="@layout/putao_network_not_login_exception_layout" />
+    </LinearLayout>
+    
+    
+
+</FrameLayout>

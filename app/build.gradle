@@ -1,0 +1,40 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion "23.0.0 rc2"
+
+    defaultConfig {
+        applicationId "com.sking.o2o"
+        minSdkVersion 15
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:appcompat-v7:22.2.0'
+    compile files('libs/alipay.jar')
+    compile files('libs/AMap_Services_V2.3.1.jar')
+    compile files('libs/Android_Location_V1.3.0.jar')
+    compile files('libs/BaiduLBS_Android.jar')
+    compile files('libs/coolcloud-uac-sdk-internal.1.2.5.jar')
+    compile files('libs/core.jar')
+    compile files('libs/cpush.jar')
+    compile files('libs/gson-2.2.4.jar')
+    compile files('libs/hmtsdk.jar')
+    compile files('libs/jpush-sdk-spec-release1.7.1.jar')
+    compile files('libs/libammsdk.jar')
+    compile files('libs/pt_sdk_v1.2.4_r23928.jar')
+    compile files('libs/putao_analytics_V1.0.jar')
+    compile files('libs/umeng-sdk-analytics_v5.2.2_fb_v4.3.1.jar')
+    compile files('libs/volley.jar')
+}

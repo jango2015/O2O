@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:id="@+id/order_subject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/putao_order_list_head_margin"
+                android:layout_marginRight="@dimen/putao_order_list_head_margin"
+                android:layout_marginTop="@dimen/putao_order_detail_margin_top"
+                android:background="@drawable/putao_bg_card_jipiao"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/putao_order_list_head_height"
+                    android:layout_marginLeft="@dimen/putao_order_list_head_margin"
+                    android:layout_marginRight="@dimen/putao_order_list_head_margin" >
+
+                    <ImageView
+                        android:id="@+id/order_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical" />
+
+                    <TextView
+                        android:id="@+id/order_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@color/putao_white"
+                        android:textSize="@dimen/putao_text_size_d" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/putao_order_list_content_height" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/putao_order_list_head_margin"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/order_content"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/putao_order_list_content_color"
+                            android:textSize="@dimen/putao_text_size_a" />
+
+                        <TextView
+                            android:id="@+id/order_phone_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/putao_order_list_subcontent_color"
+                            android:textSize="@dimen/putao_text_size_d" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/operator_logo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/putao_order_list_head_margin" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/putao_order_list_foot_height"
+                    android:layout_marginLeft="@dimen/putao_order_list_head_margin"
+                    android:layout_marginRight="@dimen/putao_order_list_head_margin" >
+
+                    <TextView
+                        android:id="@+id/order_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:textSize="@dimen/putao_text_size_d" />
+
+                    <TextView
+                        android:id="@+id/money"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/putao_order_list_title_color"
+                        android:textSize="@dimen/putao_text_size_d" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/order_subject"
+                android:layout_marginLeft="@dimen/putao_order_list_head_margin"
+                android:layout_marginRight="@dimen/putao_order_list_head_margin"
+                android:layout_marginTop="@dimen/putao_order_detail_margin_top"
+                android:background="@drawable/putao_bg_list_card"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/putao_order_detail_margin_top"
+                    android:layout_marginLeft="@dimen/putao_order_list_head_margin"
+                    android:layout_marginRight="@dimen/putao_order_list_head_margin"
+                    android:layout_marginTop="@dimen/putao_order_detail_margin_top"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dip"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/putao_hotelorderdetail_paymoney" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/putao_order_detail_margin_top"
+                            android:text="@string/putao_hotelorderdetail_orderid" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/putao_order_detail_margin_top"
+                            android:text="@string/putao_hotelorderdetail_createtime" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="36dp"
+                        android:layout_marginTop="4dip"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/order_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/putao_text_color_green" />
+
+                        <TextView
+                            android:id="@+id/order_no"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/putao_order_detail_margin_top" />
+
+                        <TextView
+                            android:id="@+id/order_create_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/putao_order_detail_margin_top" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    style="@style/putao_MyItemLineStyle"
+                    android:layout_marginBottom="10dip"
+                    android:layout_marginTop="10dip" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/putao_order_detail_margin_top"
+                    android:layout_marginLeft="@dimen/putao_order_list_head_margin"
+                    android:layout_marginRight="@dimen/putao_order_list_head_margin"
+                    android:layout_marginTop="@dimen/putao_order_detail_margin_top"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/putao_traffic_oder_detail_product_type" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dip"
+                            android:layout_marginTop="@dimen/putao_order_detail_margin_top"
+                            android:text="@string/putao_traffic_oder_detail_phone_num" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="36dp"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/order_product_des"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/order_phone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/putao_order_detail_margin_top" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    style="@style/putao_MyItemLineStyle"
+                    android:layout_marginBottom="10dip"
+                    android:layout_marginTop="10dip" />
+                
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/putao_order_detail_margin_top"
+                    android:layout_marginLeft="@dimen/putao_order_list_head_margin"
+                    android:layout_marginRight="@dimen/putao_order_list_head_margin"
+                    android:layout_marginTop="@dimen/putao_order_detail_margin_top"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/putao_hotelorderdetail_service_provider_hint" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dip"
+                            android:layout_marginTop="@dimen/putao_order_detail_margin_top"
+                            android:text="@string/putao_hotelorderdetail_kefudianhua_hint" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="36dp"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" 
+                            android:text="@string/putao_traffic_oder_detail_tips_provider" 
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/putao_traffic_oder_detail_tips_service_phone" 
+                            android:layout_marginTop="@dimen/putao_order_detail_margin_top" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <View
+            android:id="@+id/bottom_line"
+            style="@style/putao_MyItemLineStyle"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/bottom_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dip"
+            android:layout_marginTop="10dip"
+            android:orientation="horizontal"
+            android:visibility="visible" >
+
+            <Button
+                android:id="@+id/order_cancel_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_weight="1"
+                android:background="@drawable/putao_click_btn_bg_white"
+                android:text="@string/putao_order_cancel_title"
+                android:textColor="@color/putao_text_color_primary" />
+
+            <Button
+                android:id="@+id/order_pay_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:layout_weight="1"
+                android:text="@string/order_movie_quickpay" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

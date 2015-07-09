@@ -1,0 +1,52 @@
+cid	name	show_name	sort	last_sort	icon	icon_d	putao_icon_logo	target_activity	target_params	parent_id	remind_code	key_tag	search_sort
+51	社交娱乐	zh_CN:社交娱乐;en_US:Entertaiment;zh_TW:社交娛樂	0	-1						0	1		
+2	常用	zh_CN:快捷服务;en_US:Quick service;zh_TW:快捷服務	1	-1						0	2		
+1	全部	zh_CN:全部服务;en_US:All service;zh_TW:全部服務	2	-1						0	3		
+104	火车票	zh_CN:火车票;en_US:TrainTicket;zh_TW:火车票	1	1	putao_icon_quick_hcjp	putao_icon_quick_hcjp_d	putao_icon_quick_hcjp_s	so.contacts.hub.train.YellowPageBookTrainTicketActivity		2	29	火车,车票,火车票,回家,过年	1
+61	充话费	zh_CN:充话费;en_US:Telephone fare;zh_TW:充话费	2	2	putao_icon_quick_chonghf	putao_icon_quick_chonghf_d	putao_icon_quick_chonghf_s	so.contacts.hub.ui.yellowpage.YellowPageReChargeActivity		2	6	查余额,余额,充话费,话费,联通,移动,电信,运营商,充值,电话,扣费	2
+19	打车	zh_CN:打车;en_US:Taxi;zh_TW:打車	3	3	putao_icon_quick_dd	putao_icon_quick_dd_d	putao_icon_quick_dd_s	so.contacts.hub.ui.web.YellowPageKuaidiActivity	{"provider":5,"title":"打车","url":"http://api.kuaidadi.com:9898/taxi/h5/index.htm?source=putaoxinxi&key=yruwioqpkdlmncvfw2ejd&order2pay=true&orderHis=true&home400=false"}	2	7	打车,打的,的士,出租,出租车,滴滴,嘀嘀,快的,叫车,大黄蜂,易到,用车,招车,专车	1
+105	水电煤	zh_CN:水电煤;en_US:TrainTicket;zh_TW:水電煤	4	4	putao_icon_quick_sdm	putao_icon_quick_sdm_d	putao_icon_quick_sdm_s	so.contacts.hub.shuidianmei.YellowPageWaterEGActivity		2	30	水费,电费,煤气费,缴费	1
+103	订酒店	zh_CN:订酒店;en_US:Book Hotel;zh_TW:訂酒店	5	5	putao_icon_quick_djd	putao_icon_quick_djd_d	putao_icon_quick_djd_s	so.contacts.hub.ui.yellowpage.YellowPageHotelActivity		2	10	订酒店,酒店,旅馆,旅宿,住宿,住店,酒店预订,订房,开房,房,特价,限时,旅店,旅社,公寓,快捷,商务,预定,	1
+56	看电影	zh_CN:看电影;en_US:Movie;zh_TW:看電影	6	6	putao_icon_quick_kdy	putao_icon_quick_kdy_d	putao_icon_quick_kdy_s	so.contacts.hub.thirdparty.cinema.ui.YellowPageMovieListActivity		2	15	看电影,电影票,电影院,电影,热门电影,选座,优惠,影院,院线,影城,imax,IMAX,3D,3d,预定	1
+60	我的	zh_CN:我的;en_US:Favorite;zh_TW:我的	999	999	putao_icon_quick_wd	putao_icon_quick_wd_d		so.contacts.hub.ui.yellowpage.YellowPageMyActivity		2	11		
+8	出行	zh_CN:出行;en_US:Ticket;zh_TW:出行	1	1	putao_icon_quick_cxdp	putao_icon_quick_cxdp_d	putao_icon_quick_cxdp_s			1	13		
+15	酒店	zh_CN:酒店;en_US:Hotel;zh_TW:酒店	2	2	putao_icon_quick_jd	putao_icon_quick_jd_d	putao_icon_quick_jd_s			1	12		
+16	查余额	zh_CN:查余额;en_US:Balance;zh_TW:查餘額	3	3	putao_icon_quick_chf	putao_icon_quick_chf_d	putao_icon_quick_chf_s	so.contacts.hub.ui.yellowpage.YellowPageNewQueryChargeActivity		1	5	查余额,余额,充话费,话费,联通,移动,电信,运营商,充值,电话,扣费	1
+102	地铁	zh_CN:地铁;en_US:Subway;zh_TW:地鐵	4	4	putao_icon_quick_ditie	putao_icon_quick_ditie_d	putao_icon_quick_ditie_s	so.contacts.hub.ui.yellowpage.YellowPageMetroActivity	{"title":"地铁","url":"http://mo.amap.com/subway/index.html#"}	1	27	地铁,地铁图,地下铁,轻轨,城铁	1
+100	公交	zh_CN:公交;en_US:Bus;zh_TW:公交	5	5	putao_icon_quick_gj	putao_icon_quick_gj_d	putao_icon_quick_gj_s	so.contacts.hub.ui.yellowpage.YellowPageBusQActivity		1	28	公交,公共车,公交车,巴士,bus,公车,小巴,中巴,大巴	1
+50	查快递	zh_CN:查快递;en_US:Express track;zh_TW:查快遞	6	6	putao_icon_quick_ckd	putao_icon_quick_ckd_d	putao_icon_quick_ckd_s	so.contacts.hub.ui.yellowpage.YellowPageExpressSelectHome		1	8	查快递,快递,快递单号,快递查询,物流,寄快递,快递单,速递,速运,	1
+5	玩乐	zh_CN:玩乐;en_US:Play;zh_TW:玩樂	7	7	putao_icon_quick_wl	putao_icon_quick_wl_d	putao_icon_quick_wl_s			1	16		
+3	美食	zh_CN:美食;en_US:Food;zh_TW:美食	8	8	putao_icon_quick_ms	putao_icon_quick_ms_d	putao_icon_quick_ms_s			1	17		
+62	团购	zh_CN:团购;en_US:Deal;zh_TW:團購	9	9	putao_icon_quick_tg	putao_icon_quick_tg_d	putao_icon_quick_tg_s	so.contacts.hub.ui.web.YellowPageTuanActivity	{"title":"团购","url":"http://lite.m.dianping.com/zOxOda-j7H"}	1	9	团购,优惠,打折,预定,券,美食,吃,喝,玩,乐,ktv,KTV	1
+7	银行	zh_CN:银行;en_US:Bank;zh_TW:銀行	10	10	putao_icon_quick_yh	putao_icon_quick_yh_d	putao_icon_quick_yh_s			1	14		
+4	购物	zh_CN:购物;en_US:Shopping;zh_TW:購物	11	11	putao_icon_quick_gw	putao_icon_quick_gw_d	putao_icon_quick_gw_s			1	18		
+14	家政	zh_CN:家政;en_US:Housekeeping;zh_TW:家政	12	12	putao_icon_quick_jz	putao_icon_quick_jz_d	putao_icon_quick_jz_s	so.contacts.hub.ui.yellowpage.YellowPageWubaCityActivity	{"name":"家政","provider":"3","url":"http://jump.luna.58.com/jump/sclk?url=UWd1sHcYPHmYPj91PHcknjTLsyd1symVIZ6_0AQd0zuW5y6dmyOMXyNhHZTq07GLyHKJEvu1I-b3ND9OrAdv0Ru1Ibu20LuZwvdMwYPdXNqP0YdEEY-Ku7tdX--wND6uHDuPN--RNMDQRNQiXhdvHM7REiY30ZGdnHKKygDkX--lNAGrI-KJwHP8nNOlUhGNpdKlu7mkXhwC0vILndRpidqFuv3307GiP-RCiNqdpgN3Ig-imMRni1DdiDE"}	1	19	家政,钟点工,保洁,维修,搬家,清洗,月嫂,二手,配送	1
+11	驾车	zh_CN:驾车;en_US:Drive rent;zh_TW:駕車	13	13	putao_icon_quick_jc	putao_icon_quick_jc_d	putao_icon_quick_jc_s			1	20		
+9	医院	zh_CN:医院;en_US:Hospital;zh_TW:醫院	14	14	putao_icon_quick_yy	putao_icon_quick_yy_d	putao_icon_quick_yy_s			1	21		
+13	租房	zh_CN:租房;en_US:Rental housing;zh_TW:租房	15	15	putao_icon_quick_zf	putao_icon_quick_zf_d	putao_icon_quick_zf_s	so.contacts.hub.ui.yellowpage.YellowPageWubaCityActivity	{"name":"租房","provider":"2","url":"http://jump.luna.58.com/jump/sclk?url=UWd1sHcYPHmYPj91PHcknjTLsyd1symVIZ6_0AQd0zuW5yu6UhIWpA78FbQk5gKpIdbkpbPh0Luur7KcrH6VIM7y0LuAiMPvPhuFudTV0YdEEY-Ku7tdX--wND6upYuPN--RNMDQRNQiXhdvHM7REiY30ZGdnHKKygDkX--lNAGrI-KJwHP8nNOlUhGNpdKlu7mkXhwC0vILndRpidqFuv33Iy9LrZRvNDPVXHPCRy6isgRKiy_knR-w"}	1	23	租房,整租,合租,出租,日租,短租,一室,单间	1
+12	招聘	zh_CN:招聘;en_US:Recruitment;zh_TW:招聘	16	16	putao_icon_quick_zp	putao_icon_quick_zp_d	putao_icon_quick_zp_s	so.contacts.hub.ui.yellowpage.YellowPageWubaCityActivity	{"name":"招聘","provider":"1","url":"http://jump.luna.58.com/jump/sclk?url=UWd1sHcYPHmYPj91PHcknjTLsyd1symVIZ6_0AQd0zuW5gGCmyqkpy3hHZTq07GLyHKJEvu1I-b3ND9OrAdv0Ru1Ibu20LuZuhdaH17kyMIyRyGYRhOcHM78mgRbiN7bXjKv0yEkp7TVPg-wwdRCgv9kHDVyPyI8RhOgwywERYRu0hG8uAOgRAV8pWKyRyI8RMRau7-mER7oRRGingPPwYPVXg7o0Zb1p7RCNBddEN-onj7uNE"}	1	24	招聘,找工作,求职,导购,营业员,保安,打工,普工,文员,前台,兼职,服务员,临时工,临工,保姆	1
+17	挂号	zh_CN:挂号;en_US:Register;zh_TW:掛號	17	17	putao_icon_quick_gh	putao_icon_quick_gh_d	putao_icon_quick_gh_s	so.contacts.hub.ui.web.YellowPageGuahaoActivity	{"provider":6,"title":"挂号","url":"http://m.guahao.com/mobile","webtype":0}	1	22	挂号,医院,病,预约	1
+101	外卖	zh_CN:外卖;en_US:Take-away;zh_TW:外賣	18	18	putao_icon_quick_wm	putao_icon_quick_wm_d	putao_icon_quick_wm_s	so.contacts.hub.ui.yellowpage.YellowPageDetailActivity	{"title":"外卖","url":"http://i.waimai.meituan.com/"}	1	25	外卖,送餐,饿了吗,吃饭,点餐,快餐,盒饭,外送,打包	
+6	快递	zh_CN:快递;en_US:Express;zh_TW:快遞	19	19	putao_icon_quick_kd	putao_icon_quick_kd_d	putao_icon_quick_kd_s			1	26		1
+106	彩票	zh_CN:彩票;en_US:Lottery;zh_TW:彩票	20	20	putao_icon_quick_cp	putao_icon_quick_cp_d	putao_icon_quick_cp_s	so.contacts.hub.lottery.PutaoLotteryH5Activity	{"title":"彩票","url":"http://partner.8.ifeng.com/t/txlplusAuthIndex.do"}	1	31	彩票,福彩,体彩,竞彩,体育,大乐透,双色球,500万	1
+53	打车服务	zh_CN:详细分类;zh_TW:詳細分類	1	-1						11	32		
+36	代驾	zh_CN:代驾;zh_TW:代駕	2	-1						11	33		
+37	打车	zh_CN:打车;zh_TW:打車	3	-1						11	34		
+38	租车	zh_CN:租车;zh_TW:租車	4	-1						11	35		
+32	附近	zh_CN:详细分类;zh_TW:詳細分類	1	-1						8	36		
+31	常用	zh_CN:全部分类;zh_TW:全部分類	2	-1						8	37		
+24	附近	zh_CN:详细分类;zh_TW:詳細分類	1	-1						4	38		
+23	常用	zh_CN:全部分类;zh_TW:全部分類	2	-1						4	39		
+30	附近	zh_CN:详细分类;zh_TW:詳細分類	1	-1						7	40		
+29	常用	zh_CN:全部分类;zh_TW:全部分類	2	-1						7	41		
+26	女人	zh_CN:详细分类;zh_TW:詳細分類	1	-1						5	42		
+25	男人	zh_CN:全部分类;zh_TW:全部分類	2	-1						5	43		
+28	附近	zh_CN:详细分类;zh_TW:詳細分類	1	-1						6	44		
+27	常用	zh_CN:全部分类;zh_TW:全部分類	2	-1						6	45		
+34	附近	zh_CN:详细分类;zh_TW:詳細分類	1	-1						9	46		
+33	常用	zh_CN:全部分类;zh_TW:全部分類	2	-1						9	47		
+44	附近	zh_CN:详细分类;zh_TW:詳細分類	1	-1						15	48		
+42	常用	zh_CN:全部分类;zh_TW:全部分類	2	-1						15	49		
+22	附近	zh_CN:详细分类;zh_TW:詳細分類	1	-1						3	50		
+20	常用	zh_CN:全部分类;zh_TW:全部分類	2	-1						3	51		
+21	运营		3	-1						3	50		

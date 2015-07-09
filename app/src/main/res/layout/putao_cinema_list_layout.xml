@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <include  layout="@layout/putao_header_view"/>
+
+    <ListView
+        android:id="@+id/cinema_list"
+        style="@style/putao_ListStyle"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@null" />
+    
+    
+    <LinearLayout
+        android:id="@+id/network_exception_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone" >
+        <include layout="@layout/putao_network_not_login_exception_layout" />
+    </LinearLayout>
+
+</LinearLayout>

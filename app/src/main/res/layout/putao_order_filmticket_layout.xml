@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/putao_order_detail_margin_top"
+        android:layout_marginTop="@dimen/putao_order_detail_margin_top"
+        android:orientation="vertical"
+        android:visibility="visible" >
+        
+        <LinearLayout
+	        android:id="@+id/layout_main"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:orientation="vertical"
+	        android:visibility="visible" >
+        
+
+        <include
+            android:id="@+id/putao_view_order_aboutmovie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/putao_view_order_filmticket"
+            android:layout_marginLeft="@dimen/putao_orderitem_contentleftrightpadding"
+            android:layout_marginRight="@dimen/putao_orderitem_contentleftrightpadding"
+            android:layout_marginTop="@dimen/putao_orderitem_contenttoppadding" />
+
+        <!-- 虚线 -->
+
+        <RelativeLayout
+            android:id="@+id/putao_view_order_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/putao_order_list_head_margin"
+            android:layout_marginRight="@dimen/putao_order_list_head_margin"
+            android:layout_marginTop="@dimen/putao_order_detail_margin_top"
+            android:background="@drawable/putao_bg_list_card"
+            android:paddingBottom="@dimen/putao_moviedetail_ordercontent_topbottompadding"
+            android:paddingLeft="@dimen/putao_moviedetail_ordercontent_leftrightpadding"
+            android:paddingRight="@dimen/putao_moviedetail_ordercontent_leftrightpadding"
+            android:paddingTop="@dimen/putao_moviedetail_ordercontent_topbottompadding" >
+
+            <LinearLayout
+                android:id="@+id/layout_order_params"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <!-- 订单状态  只在详情页显示 start -->
+
+                <LinearLayout
+                    android:id="@+id/tr_filmorder_status"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/putao_moviedetail_ordercontent_textleftmarginright"
+                        android:text="@string/movie_order_paystate"
+                        android:textSize="@dimen/putao_text_second_size" />
+
+                    <TextView
+                        android:id="@+id/tv_filmorder_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:textSize="@dimen/putao_text_second_size" />
+                </LinearLayout>
+                <!-- 订单状态  只在详情页显示 end -->
+
+                <LinearLayout
+                    android:id="@+id/tr_filmorder_price"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/putao_moviedetail_ordercontent_textleftmarginright"
+                        android:text="@string/movie_order_price"
+                        android:textSize="@dimen/putao_text_second_size" />
+
+                    <TextView
+                        android:id="@+id/tv_filmorder_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:textSize="@dimen/putao_text_second_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tr_filmorder_serialnumber"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/putao_moviedetail_ordercontent_textleftmarginright"
+                        android:text="@string/movie_order_serialnumber"
+                        android:textSize="@dimen/putao_text_second_size" />
+
+                    <TextView
+                        android:id="@+id/tv_filmorder_serialnumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/putao_text_second_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tr_filmorder_createtime"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/putao_moviedetail_ordercontent_textleftmarginright"
+                        android:text="@string/movie_order_createtime"
+                        android:textSize="@dimen/putao_text_second_size" />
+
+                    <TextView
+                        android:id="@+id/tv_filmorder_createtime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/putao_text_second_size" />
+                </LinearLayout>
+                <!-- add by hyl 2015-1-7 start -->
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/putao_moviedetail_ordercontent_textleftmarginright"
+                        android:text="@string/order_movie_seat"
+                        android:textSize="@dimen/putao_text_second_size" />
+
+                    <TextView
+                        android:id="@+id/tv_filmorder_seatInfo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/putao_text_second_size" />
+                </LinearLayout>
+                <!-- add by hyl 2015-1-7 end -->
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="@dimen/putao_moviedetail_ordercontent_textleftmarginright"
+                        android:text="@string/order_movie_telephone"
+                        android:textSize="@dimen/putao_text_second_size" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/tv_filmorder_phone_no"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="middle"
+                            android:maxEms="7"
+                            android:singleLine="true"
+                            android:textSize="@dimen/putao_text_second_size" />
+
+                        <LinearLayout
+                            android:id="@+id/edittext_layout"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:clickable="true" >
+
+                            <EditText
+                                android:id="@+id/et_filmorder_phone_no"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:hint="请填写手机号码"
+                                android:inputType="phone" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_filmorder_reminder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/putao_order_list_head_margin"
+            android:layout_marginRight="@dimen/putao_order_list_head_margin"
+            android:layout_marginTop="20dp"
+            android:text="@string/movie_order_remind"
+            android:textColor="@color/putao_red"
+            android:textSize="@dimen/putao_text_tertiary_size"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/layout_handle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="@dimen/putao_order_list_head_margin"
+            android:layout_marginRight="@dimen/putao_order_list_head_margin"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <!-- 服务商信息 start -->
+
+            <LinearLayout
+                android:id="@+id/server_provider_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/putao_bg_list_card"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/putao_moviedetail_ordercontent_topbottompadding"
+                android:paddingTop="@dimen/putao_moviedetail_ordercontent_topbottompadding"
+                android:visibility="gone" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:text="服务提供:"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="@dimen/putao_order_detail_margin_top"
+                        android:text="客服电话:"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="@dimen/putao_order_detail_margin_top"
+                        android:text="备        注:"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="格瓦拉电影"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/putao_order_detail_margin_top"
+                        android:text="400-040-6506"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/putao_order_detail_margin_top"
+                        android:text="@string/movie_order_remind1"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- 服务商信息end -->
+
+
+            <!-- 详情页打车，附近的吃喝玩乐，取票机位置 start -->
+
+            <LinearLayout
+                android:id="@+id/layout_taxi_and_entertainment"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/putao_order_detail_margin_top"
+                android:background="@drawable/putao_bg_list_card"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <View style="@style/putao_MyItemLineStyle_fill" />
+
+                <RelativeLayout
+                    android:id="@+id/btn_taxi"
+                    android:layout_width="fill_parent"
+                    android:layout_height="48dp"
+                    android:background="@drawable/putao_card_item_selector"
+                    android:clickable="true" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="16dp"
+                        android:drawableLeft="@drawable/card_wangfan_dc"
+                        android:drawablePadding="8dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/order_movie_texi"
+                        android:textColor="@color/putao_text_color_green"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="16dp"
+                        android:background="@drawable/putao_card_all_show" />
+                </RelativeLayout>
+
+                <View style="@style/putao_MyItemLineStyle_fill" />
+
+                <RelativeLayout
+                    android:id="@+id/btn_entertainment"
+                    android:layout_width="fill_parent"
+                    android:layout_height="48dp"
+                    android:background="@drawable/putao_card_item_selector"
+                    android:clickable="true"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="16dp"
+                        android:drawableLeft="@drawable/putao_card_wangfan_cy"
+                        android:drawablePadding="8dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/order_movie_entertainment"
+                        android:textColor="@color/putao_text_color_green"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="16dp"
+                        android:background="@drawable/putao_card_all_show" />
+                </RelativeLayout>
+
+                <View style="@style/putao_MyItemLineStyle_fill" />
+
+                <RelativeLayout
+                    android:id="@+id/indexofgetticket"
+                    android:layout_width="fill_parent"
+                    android:layout_height="48dp"
+                    android:background="@drawable/putao_card_item_selector"
+                    android:clickable="true"
+                    android:orientation="horizontal"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="16dp"
+                        android:drawableLeft="@drawable/putao_card_dianying_qpj"
+                        android:drawablePadding="8dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/order_movie_tickethelp"
+                        android:textColor="@color/putao_text_color_green"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="16dp"
+                        android:background="@drawable/putao_card_all_show" />
+                </RelativeLayout>
+            </LinearLayout>
+            <!-- 详情页打车，附近的吃喝玩乐，取票机位置 end -->
+            <!-- 详情页支付 取消 start -->
+
+            <LinearLayout
+                android:id="@+id/layout_payandcancel"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/putao_order_detail_margin_top"
+                android:background="@drawable/putao_bg_list_card"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <View style="@style/putao_MyItemLineStyle_fill" />
+
+                <RelativeLayout
+                    android:id="@+id/order_movie_cancel"
+                    android:layout_width="fill_parent"
+                    android:layout_height="48dp"
+                    android:background="@drawable/putao_card_item_selector"
+                    android:clickable="true" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="16dp"
+                        android:drawableLeft="@drawable/putao_card_order_cancel"
+                        android:drawablePadding="8dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/order_movie_cancel"
+                        android:textColor="@color/putao_text_color_green"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="16dp"
+                        android:background="@drawable/putao_card_all_show" />
+                </RelativeLayout>
+
+                <View style="@style/putao_MyItemLineStyle_fill" />
+
+                <RelativeLayout
+                    android:id="@+id/btn_quickpay"
+                    android:layout_width="fill_parent"
+                    android:layout_height="48dp"
+                    android:background="@drawable/putao_card_item_selector"
+                    android:clickable="true"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/textview_quickpay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="16dp"
+                        android:drawableLeft="@drawable/putao_card_order_pay"
+                        android:drawablePadding="8dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/order_movie_quickpay"
+                        android:textColor="@color/putao_text_color_green"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="16dp"
+                        android:background="@drawable/putao_card_all_show" />
+                </RelativeLayout>
+            </LinearLayout>
+            <!-- 详情页支付 取消 end -->
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_quickpay_generate_order"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="24dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:clickable="true"
+            android:text="@string/order_movie_finishseat"
+            android:visibility="gone" />
+        </LinearLayout>
+    <LinearLayout
+        android:id="@+id/network_exception_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" >
+
+        <include layout="@layout/putao_network_not_login_exception_layout" />
+    </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

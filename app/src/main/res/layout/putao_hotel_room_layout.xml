@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="@color/putao_white"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/hoteldetail_comedate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/putao_yp_listitem_seclector"
+            android:drawableRight="@drawable/putao_icon_list_down"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:singleLine="true"
+            android:text="入住 12-18"
+            android:textColor="@color/putao_text_color_second"
+            android:textSize="@dimen/putao_listview_firstline_textsize" />
+
+        <View
+            android:layout_width="@dimen/putao_divider_line_size"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/putao_pt_line_light_gray" />
+
+        <TextView
+            android:id="@+id/hoteldetail_leavedate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/putao_yp_listitem_seclector"
+            android:drawableRight="@drawable/putao_icon_list_down"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:singleLine="true"
+            android:text="离店 12-19"
+            android:textColor="@color/putao_text_color_second"
+            android:textSize="@dimen/putao_listview_firstline_textsize" />
+    </LinearLayout>
+
+    <View style="@style/putao_DividerStyle" />
+
+    <ListView
+        android:id="@+id/hoteldetail_roominfo_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/putao_white"
+        android:divider="@color/putao_yellow_page_line_color"
+        android:dividerHeight="@dimen/putao_divider_line_size"
+        android:listSelector="@color/putao_transparent"
+        android:scrollbars="none"
+        android:splitMotionEvents="false" />
+
+    <View style="@style/putao_DividerStyle" />
+
+</LinearLayout>

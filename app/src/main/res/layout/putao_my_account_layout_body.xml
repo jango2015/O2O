@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/putao_shop_detail_bg"
+    android:gravity="center_horizontal"
+    android:minHeight="262dp"
+    android:paddingTop="40dp"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/mobile_account_head_img"
+        android:layout_width="81dp"
+        android:layout_height="81dp"
+        android:contentDescription="@string/putao_about_us"
+        android:scaleType="fitXY"
+        android:src="@drawable/putao_icon_my_user" />
+
+    <TextView
+        android:id="@+id/mobile_account_name_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/putao_bind_mobile"
+        android:textColor="@color/putao_white"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/mobile_account_sub_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:singleLine="true"
+        android:text="@string/putao_bind_mobile_describe"
+        android:textColor="@color/putao_white"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="53dp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="24dp"
+        android:layout_marginTop="38dp"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/my_notify_item"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/my_notify_item_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/my_notify_item_name"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/putao_icon_mine_tixing" />
+
+            <so.contacts.hub.remind.simple.SimpleRemindView
+                android:id="@+id/my_notify_item_remindview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/my_notify_item_img"
+                android:layout_marginTop="-5dp"
+                android:layout_toRightOf="@+id/my_notify_item_img"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/my_notify_item_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:text="@string/message_center"
+                android:textColor="@color/putao_white"
+                android:textSize="@dimen/putao_yellow_page_my_item_text" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/divider_line"
+            android:layout_width="0.5dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:background="@color/putao_my_act_line" />
+
+        <RelativeLayout
+            android:id="@+id/my_activities_item"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/my_activities_item_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/my_activities_item_name"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/putao_icon_mine_huodong" />
+
+            <so.contacts.hub.remind.simple.SimpleRemindView
+                android:id="@+id/my_activities_item_remindview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/my_activities_item_img"
+                android:layout_marginTop="-5dp"
+                android:layout_toRightOf="@+id/my_activities_item_img" />
+
+            <TextView
+                android:id="@+id/my_activities_item_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:text="@string/putao_yellow_page_my_activities"
+                android:textColor="@color/putao_white"
+                android:textSize="@dimen/putao_yellow_page_my_item_text" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

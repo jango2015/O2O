@@ -1,0 +1,802 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.yulong.android.contacts.discover"
+    android:versionCode="1714"
+    android:versionName="1.7.14" >
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+
+    <!-- Required -->
+    <permission android:name="com.yulong.android.contacts.discover.permission.JPUSH_MESSAGE" android:protectionLevel="signature" />
+
+    <!-- Required -->
+    <uses-permission android:name="com.yulong.android.contacts.discover.permission.JPUSH_MESSAGE" />
+
+    <!-- Optional. Required for location feature -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_UPDATES" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
+    <uses-permission android:name="android.permission.READ_SYNC_STATS" />
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.WRITE_CALL_LOG" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="com.google.android.googleapps.permission.GOOGLE_AUTH.mail" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.android.voicemail.permission.ADD_VOICEMAIL" />
+    <uses-permission android:name="com.android.voicemail.permission.READ_WRITE_ALL_VOICEMAIL" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INSTALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.DELETE_PACKAGES"/>
+    <uses-permission android:name="android.permission.CLEAR_APP_CACHE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CLEAR_APP_USER_DATA"/>
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+
+
+
+    <application
+        android:name="so.contacts.hub.ContactsApp"
+        android:icon="@drawable/putao_ic_launcher"
+        android:label="@string/putao_app_name"
+        android:theme="@style/putao_AppTheme" >
+
+        <!-- android:persistent="true" -->
+        <!-- <uses-library android:name="android.test.runner" /> -->
+
+        <meta-data
+            android:name="versionCode"
+            android:value="1714" />
+        <meta-data
+            android:name="versionName"
+            android:value="1.7.14" />
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="0c33347a22072e690e27d63b6074e6fb" />
+        <!-- <meta-data -->
+        <!-- android:name="com.amap.api.v2.apikey" -->
+        <!-- android:value="5cb5d6706fcc00d8001eec1eb65a9a44" /> -->
+        <!-- hyl v1.2: 785444336b561bce795b601b48c75875 -->
+        <!-- hl v1.2: e9dccc1a552e7952e9fb2326ab31722c -->
+
+        <!-- change v1.3 debug  : edd351d24e8a2b71c98df7bba4d2857e -->
+        <!-- change v1.3 release: 5401930c11f1785bd02c8f51bce57d1d -->
+
+        <!-- 0c33347a22072e690e27d63b6074e6fb	酷派生活（apk版本 shared）	新版key（采用酷派 shared签名生成）  -->
+        <!-- dd7174968149887d60689324230a41ec	酷派生活（AllInOne版本 shared）	新版key（采用酷派 shared签名生成）  -->
+        <!-- 3bff50581d9c0954145fdb7a7b591845	酷派生活（apk版本 paltfrom）	新版key（采用酷派 paltfrom签名生成）  -->
+        <!-- b72fc1593bd274811bc104b380534fe4	酷派生活（AllInOne版本 paltfrom）	新版key（采用酷派 paltfrom签名生成）  -->
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="gGexGSz1PtLzO7AXuPhKrOQX" />
+        <!-- hyl 9w6tfIX89H5kEBmFfLoodGcx -->
+        <!-- ffh uh2EbxdqcPQXHXWjzl6ZdWAi -->
+        <!-- hl debug aGM4wNIV8aPnWo16IZHhHUre -->
+        <!-- coolpad gGexGSz1PtLzO7AXuPhKrOQX -->
+        <!-- coolpadAllInOne nvveNGqGtEhApH2SAxlxRvGK -->
+
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="53c7720756240bd35b008841" >
+        </meta-data>
+        <!-- 54201f19fd98c515340053ca test -->
+        <!-- 53c7720756240bd35b008841   -normal -->
+        <!-- 53f3495efd98c5ff13008c28   -cb20140819 -->
+        <!-- 53ec20d4fd98c5df0300298a   -cb -->
+
+        <!-- add by hyl 2015-1-4 start 微信渠道标识-->
+        <meta-data android:name="WX_CHANNEL_NO"
+            android:value="coolpad_apk"
+            />
+        <!-- coolpad normal: coolpad_apk_share -->
+        <!-- zte test: zte_apk -->
+        <!-- add by hyl 2015-1-4 end -->
+
+        <meta-data
+            android:name="PUTAO_APPID"
+            android:value="5" />
+        <!-- 标识appId,当前通讯录+的appid是2; doov版本id=3 eton=4 coolpad=5 -->
+        <meta-data
+            android:name="PUTAO_CHANNEL"
+            android:value="CoolPad_0001" />
+        <meta-data
+            android:name="PUTAO_APPKEY"
+            android:value="53c7720756240bd35b008841" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="CoolPad_0001" />
+
+        <!-- CoolPad_0001             -normal -->
+        <!-- CoolPad_0002             -cbtest -->
+        <!-- coolpad_activity_test    -activies test -->
+        <!-- CoolPad_AllInOne_0001    -coolpad_allinone normal -->
+        <!-- CoolPad_AllInOne_0002    -coolpad_allinone test -->
+        <!-- Required. For publish channel feature -->
+
+        <meta-data android:name="JPUSH_CHANNEL" android:value="CoolPad_0001"/>
+        <!-- Required. AppKey copied from Portal -->
+        <meta-data android:name="JPUSH_APPKEY" android:value="69fb0924ef453b694a91b57e"/>
+        <!-- coolpad normal key: 69fb0924ef453b694a91b57e -->
+        <!-- change test key: 2ae3bf4f1900d292684b0cf0 -->
+        <!-- cb test key 8cfa2686d43b952ca1afb291 -->
+
+        <activity
+            android:name="so.contacts.hub.ui.MainActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/putao_app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="so.contacts.hub.ui.yellowpage.YellowPageCategoryActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="so.contacts.hub.ui.yellowpage.YellowPageSearchActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="so.contacts.hub.ui.yellowpage.YellowPageCitySelectActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="so.contacts.hub.ui.yellowpage.YellowPageExpressSelectActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <!-- delete code by putao_lhq start -->
+        <!-- 过期代码 -->
+        <!--         <activity -->
+        <!--             android:name="so.contacts.hub.ui.yellowpage.YellowPageServicesActivity" -->
+        <!--             android:exported="true" -->
+        <!--             android:screenOrientation="portrait" /> -->
+        <!-- delete code by putao_lhq end -->
+        <activity
+            android:name="so.contacts.hub.ui.yellowpage.YellowPageSearchNumberActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible" />
+        <activity
+            android:name="so.contacts.hub.ui.yellowpage.YellowPageDealActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="so.contacts.hub.ui.yellowpage.YellowPageDealSearchActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible" />
+        <activity
+            android:name="so.contacts.hub.ui.yellowpage.YellowPageCouponActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="so.contacts.hub.ui.yellowpage.YellowPageCouponSearchActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible" />
+        <activity
+            android:name="so.contacts.hub.ui.yellowpage.YellowPageShopDetailActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="so.contacts.hub.ui.yellowpage.YellowPageDetailActivity"
+            android:exported="true"
+            android:process=":web"
+            android:screenOrientation="portrait"
+            android:theme="@style/putao_MyTransparent" />
+        <activity
+            android:name="so.contacts.hub.ui.yellowpage.YellowPageJumpH5Activity"
+            android:exported="true"
+            android:theme="@style/putao_AppTheme"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="so.contacts.hub.ui.yellowpage.YellowPageELongHotelActivity"
+            android:exported="true"
+            android:process=":web"
+            android:screenOrientation="portrait"
+            android:theme="@style/putao_MyTransparent" />
+        <activity
+            android:name="so.contacts.hub.ui.web.YellowPageBusActivity"
+            android:exported="true"
+            android:process=":web"
+            android:screenOrientation="portrait"
+            android:theme="@style/putao_MyTransparent" />
+        <activity
+            android:name="so.contacts.hub.ui.yellowpage.YellowPageWubaCityActivity"
+            android:exported="true"
+            android:process=":web"
+            android:screenOrientation="portrait"
+            android:theme="@style/putao_MyTransparent" />
+        <activity
+            android:name="so.contacts.hub.ui.web.YellowPageKuaidiActivity"
+            android:exported="true"
+            android:process=":web"
+            android:screenOrientation="portrait"
+            android:theme="@style/putao_MyTransparent" />
+        <activity
+            android:name="so.contacts.hub.ui.web.YellowPageGuahaoActivity"
+            android:exported="true"
+            android:process=":web"
+            android:screenOrientation="portrait"
+            android:theme="@style/putao_MyTransparent" />
+
+        <activity
+            android:name="so.contacts.hub.ui.web.YellowPageTuanActivity"
+            android:exported="true"
+            android:process=":web"
+            android:screenOrientation="portrait"
+            android:theme="@style/putao_MyTransparent" />
+        <activity
+            android:name="so.contacts.hub.ui.web.YellowPageCtripActivity"
+            android:exported="true"
+            android:process=":web"
+            android:screenOrientation="portrait"
+            android:theme="@style/putao_MyTransparent" />
+        <activity
+            android:name="so.contacts.hub.ui.web.YellowPageCtripHotelActivity"
+            android:exported="true"
+            android:process=":web"
+            android:screenOrientation="portrait"
+            android:theme="@style/putao_MyTransparent" />
+        <activity
+            android:name="so.contacts.hub.ui.web.YellowPageDriverActivity"
+            android:exported="true"
+            android:process=":web"
+            android:screenOrientation="portrait"
+            android:theme="@style/putao_MyTransparent" />
+        <activity
+            android:name="so.contacts.hub.ui.web.YellowPageCinemaActivity"
+            android:exported="true"
+            android:process=":web"
+            android:screenOrientation="portrait"
+            android:theme="@style/putao_MyTransparent" />
+        <activity
+            android:name="so.contacts.hub.lottery.PutaoLotteryH5Activity"
+            android:exported="true"
+            android:process=":web"
+            android:screenOrientation="portrait"
+            android:theme="@style/putao_MyTransparent" />
+        <activity
+            android:name="so.contacts.hub.ui.web.YellowPageQQPhoneChargeActivity"
+            android:exported="true"
+            android:process=":web"
+            android:screenOrientation="portrait"
+            android:theme="@style/putao_MyTransparent" />
+        <activity
+            android:name="so.contacts.hub.ui.web.YellowPageCtripTrainActivity"
+            android:exported="true"
+            android:process=":web"
+            android:screenOrientation="portrait"
+            android:theme="@style/putao_MyTransparent" />
+
+        <activity
+            android:name="so.contacts.hub.ui.yellowpage.YellowPageNewQueryChargeActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="so.contacts.hub.ui.yellowpage.YellowPageHotelActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="so.contacts.hub.thirdparty.tongcheng.ui.YellowPageHotelListActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="so.contacts.hub.thirdparty.tongcheng.ui.YellowPageHotelDetailActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="so.contacts.hub.thirdparty.tongcheng.ui.YellowPageHotelOrderActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="so.contacts.hub.thirdparty.tongcheng.ui.YellowPageHotelOrderResultActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="so.contacts.hub.thirdparty.tongcheng.ui.YellowPageHotelPayActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="so.contacts.hub.thirdparty.tongcheng.ui.YellowPageHotelOrderDetailActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="so.contacts.hub.ui.yellowpage.YellowPageCalendarActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="so.contacts.hub.ui.yellowpage.YellowPageExpressSelectHome"
+            android:exported="true"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="so.contacts.hub.ui.yellowpage.YellowPageExpressSelectReslutPage"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="so.contacts.hub.ui.yellowpage.YellowPageExpressSelectHistoryPage"
+            android:screenOrientation="portrait" />
+
+
+
+        <activity
+            android:name="so.contacts.hub.ui.yellowpage.YellowPageMyActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="so.contacts.hub.ui.expresscheck.zxing.ScanCaptureActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <!--
+             <receiver android:name="so.contacts.hub.broadcast.QueryTeleChargeMsgReceiver" >
+            <intent-filter>
+                <action android:name="SENT_SMS_ACTION" />              		
+            </intent-filter>
+        </receiver> -->
+        <service
+            android:name="so.contacts.hub.service.PlugService"
+            android:exported="true" />
+        <service
+            android:name="so.contacts.hub.service.InitDataService"
+            android:exported="false" />
+
+        <activity
+            android:name="so.contacts.hub.ui.yellowpage.YellowPageAboutActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="so.contacts.hub.ui.yellowpage.YellowPageErrorCollectActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustPan|stateVisible"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="so.contacts.hub.ui.yellowpage.YellowPageReChargeActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="so.contacts.hub.ui.yellowpage.YellowPageChargeTrafficOrderActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="so.contacts.hub.ui.yellowpage.YellowPageChargeTelephoneOrderActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <!-- android:windowSoftInputMode="adjustPan" -->
+        <activity
+            android:name="so.contacts.hub.ui.yellowpage.YellowPageChargeResultActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="so.contacts.hub.ui.yellowpage.YellowPageChargeHistoryActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+
+        <receiver android:name="so.contacts.hub.gamecenter.receiver.AppDownInstaller$AppDownloadReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETE" />
+                <action android:name="android.intent.action.VIEW_DOWNLOADS" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="so.contacts.hub.gamecenter.receiver.AppDownInstaller$AppPackageReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.alipay.android.app.sdk.WapPayActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="so.contacts.hub.ui.yellowpage.ChargeQuestionActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="so.contacts.hub.ui.yellowpage.TrafficQuestionActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="so.contacts.hub.ui.yellowpage.YellowPageMapActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="so.contacts.hub.ui.yellowpage.YellowPageMyFavoriteHistoryActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="so.contacts.hub.ui.yellowpage.YellowPageServerManagerActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="so.contacts.hub.ui.yellowpage.YellowPageMetroActivity"
+            android:exported="true"
+            android:process=":web"
+            android:screenOrientation="portrait"
+            android:theme="@style/putao_MyTransparent" >
+        </activity>
+        <activity
+            android:name="so.contacts.hub.ui.web.YellowPageTransportActivity"
+            android:exported="true"
+            android:process=":web"
+            android:screenOrientation="portrait"
+            android:theme="@style/putao_MyTransparent" >
+        </activity>
+        <activity
+            android:name="so.contacts.hub.ui.web.YellowPageDianpingGroupActivity"
+            android:exported="true"
+            android:process=":web"
+            android:screenOrientation="portrait"
+            android:theme="@style/putao_MyTransparent" >
+        </activity>
+        <activity
+            android:name="so.contacts.hub.ui.yellowpage.YellowPageSubwayCitySelectActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="so.contacts.hub.msgcenter.ui.YellowPageMyOrderActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="so.contacts.hub.ui.yellowpage.YellowPageBusQActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" >
+        </activity>
+        <activity
+            android:name="so.contacts.hub.ui.yellowpage.CheckMobileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="so.contacts.hub.ui.yellowpage.CheckMobileManualActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="so.contacts.hub.train.YellowPageTongchengTrainActivity"
+            android:exported="true"
+            android:process=":web"
+            android:screenOrientation="portrait"
+            android:theme="@style/putao_MyTransparent"  />
+        <activity
+            android:name="so.contacts.hub.lottery.YellowPageLotteryOrderDetailActivity"
+            android:exported="true"
+            android:process=":web"
+            android:screenOrientation="portrait"
+            android:theme="@style/putao_MyTransparent" />
+
+        <activity
+            android:name="so.contacts.hub.train.YellowPageBookTrainTicketActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="so.contacts.hub.train.YellowPagePostAddressActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name="so.contacts.hub.train.YellowPageTrainTicketOrderHistoryH5Activity"
+            android:exported="true"
+            android:process=":web"
+            android:screenOrientation="portrait"
+            android:theme="@style/putao_MyTransparent" />
+        <activity
+            android:name="so.contacts.hub.train.YellowPageTravellerAddressSelectActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="so.contacts.hub.thirdparty.cinema.ui.MovieDetailActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="so.contacts.hub.thirdparty.cinema.ui.CinemaListActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="so.contacts.hub.thirdparty.cinema.ui.YellowPageMovieListActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="so.contacts.hub.trafficoffence.TrafficOffenceQueryH5Activity"
+            android:exported="true"
+            android:process=":web"
+            android:screenOrientation="portrait"
+            android:theme="@style/putao_MyTransparent" />
+        <activity
+            android:name="so.contacts.hub.thirdparty.cinema.ui.OpenPlayListActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="so.contacts.hub.trafficoffence.VehicleInfoShowActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="so.contacts.hub.trafficoffence.VehicleInfoSettingActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="so.contacts.hub.trafficoffence.TrafficOffenceDetailActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"/>
+
+        <!-- Start 极光推送 -->
+        <!-- Required -->
+        <service
+            android:name="cn.jpush.android.service.PushService"
+            android:enabled="true"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER" />
+                <action android:name="cn.jpush.android.intent.REPORT" />
+                <action android:name="cn.jpush.android.intent.PushService" />
+                <action android:name="cn.jpush.android.intent.PUSH_TIME" />
+            </intent-filter>
+        </service>
+
+        <!-- Required -->
+        <receiver
+            android:name="cn.jpush.android.service.PushReceiver"
+            android:enabled="true" >
+            <intent-filter android:priority="1000"> <!--since 1.3.5 -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" /> <!--since 1.3.5 -->
+                <category android:name="com.yulong.android.contacts.discover" /> <!--since 1.3.5 -->
+            </intent-filter> <!--since 1.3.5 -->
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        <!-- Required SDK核心功能-->
+        <activity
+            android:name="cn.jpush.android.ui.PushActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:configChanges="orientation|keyboardHidden" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.yulong.android.contacts.discover" />
+            </intent-filter>
+        </activity>
+        <!-- Required SDK核心功能-->
+        <service
+            android:name="cn.jpush.android.service.DownloadService"
+            android:enabled="true"
+            android:exported="false" >
+        </service>
+        <!-- Required SDK核心功能-->
+        <receiver android:name="cn.jpush.android.service.AlarmReceiver" />
+
+        <!-- User defined.  For test only  用户自定义的广播接收器-->
+        <receiver
+            android:name="so.contacts.hub.push.PushCustomReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION" /> <!--Required  用户注册SDK的intent-->
+                <action android:name="cn.jpush.android.intent.UNREGISTRATION" />
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" /> <!--Required  用户接收SDK消息的intent-->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" /> <!--Required  用户接收SDK通知栏信息的intent-->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" /> <!--Required  用户打开自定义通知栏的intent-->
+                <action android:name="cn.jpush.android.intent.ACTION_RICHPUSH_CALLBACK" /> <!--Optional 用户接受Rich Push Javascript 回调函数的intent-->
+                <action android:name="cn.jpush.android.intent.CONNECTION" /><!-- 接收网络变化 连接/断开 since 1.6.3 -->
+                <category android:name="com.yulong.android.contacts.discover" />
+            </intent-filter>
+        </receiver>
+
+        <!-- End 极光推送 -->
+
+
+        <!-- Add by putao_lhq for 酷云账号 start -->
+        <activity
+            android:name="so.contacts.hub.ui.yellowpage.YellowPageLoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.coolcloud.uac.android.api.comm.AssistActivity"
+            android:label="uac.view.assit"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.coolcloud.uac.android.api.comm.LoginActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+
+        </activity>
+        <activity
+            android:name="com.coolcloud.uac.android.api.comm.OAuth2Activity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.coolcloud.uac.android.api.comm.AuthenticateActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <!-- Add by putao_lhq for 酷云账号 end -->
+
+
+        <!-- Add by hyl wechat_pay start -->
+        <activity
+            android:name="com.yulong.android.contacts.discover.wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop" />
+        <!-- Add by hyl wechat_pay end -->
+
+        <activity
+            android:name="so.contacts.hub.active.YellowPageActiveHistoryActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="so.contacts.hub.ui.yellowpage.WebViewDialog"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/putao_ActivityDialogTheme" >
+        </activity>
+
+        <!-- Add by zj remindcenter start -->
+        <activity
+            android:name="so.contacts.hub.msgcenter.ui.YellowPageMyHistoryOrderActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="so.contacts.hub.msgcenter.ui.YellowPageMessageCenterActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="so.contacts.hub.msgcenter.ui.YellowPageMessageCenterSettingActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="so.contacts.hub.thirdparty.cinema.ui.CinemaSelectSeatActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="so.contacts.hub.thirdparty.cinema.ui.CinemaPaymentActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!-- Add by zj remindcenter end -->
+
+        <receiver android:name="so.contacts.hub.broadcast.RevivePlugServiceReceiver" >
+            <intent-filter>
+                <action android:name="so.contacts.hub.check.plugservice" />
+            </intent-filter>
+        </receiver>
+
+        <!--  add ljq 水电煤 -->
+        <activity
+            android:name="so.contacts.hub.shuidianmei.YellowPageWaterEGActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+
+
+        <activity
+            android:name="so.contacts.hub.shuidianmei.YellowPageWaterEGHistoryActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="so.contacts.hub.ui.yellowpage.YellowPageUserFeedbackActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="so.contacts.hub.payment.PaymentResultActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="so.contacts.hub.trafficoffence.YellowPageAllPeccancyDetailsActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+
+        <!--    add by peku		电影订单详细页面相关 -->
+        <activity
+            android:name="so.contacts.hub.thirdparty.cinema.ui.MovieOrderDetailsActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="so.contacts.hub.thirdparty.cinema.ui.MovieTicketHelpActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <!--    		end -->
+
+        <!--
+        <provider android:name="com.putao.analytics.provider.MyContentProvider"
+            android:authorities="so.contacts.hub"
+            android:multiprocess="false">
+        </provider>
+
+        -->
+
+
+        <!-- Coolpad Push Receiver -->
+        <receiver android:name="com.yulong.android.cpush.clientapi.receiver.MessageReceiver" >
+            <intent-filter>
+                <action android:name="com.yulong.android.cpush.action.receivemessage.7001" />
+            </intent-filter>
+        </receiver>
+        <!-- 通知中转Activity -->
+        <activity android:name="so.contacts.hub.push.NotifyActivity"
+            android:theme="@android:style/Theme.Translucent" />
+        <service android:name="so.contacts.hub.msgcenter.NotifycationClickIntentService"  />
+    </application>
+
+</manifest>

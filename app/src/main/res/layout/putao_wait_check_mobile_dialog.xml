@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/putao_white"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/putao_checking_msg"
+        android:textColor="@color/putao_black"
+        android:textSize="@dimen/putao_contentTitle" 
+	    android:paddingLeft="10dip"
+	    android:paddingRight="10dip" />
+
+    <ProgressBar
+        android:id="@+id/progress"
+        style="@style/putao_progressBarHorizontal_gray"
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:layout_marginTop="20dip"
+        android:layout_marginBottom="20dp"
+        android:progress="50" 
+	    android:paddingLeft="10dip"
+	    android:paddingRight="10dip" />
+
+</LinearLayout>

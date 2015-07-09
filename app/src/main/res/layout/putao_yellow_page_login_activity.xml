@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:contentDescription="@string/putao_about_us"
+            android:src="@drawable/putao_icon_account_login" />
+
+        <TextView
+            android:id="@+id/tip_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/putao_text_tip_account"
+            android:textColor="@color/putao_express_result_info_date"
+            android:textSize="12sp" />
+
+        <View
+            style="@style/putao_MyItemLineStyle"
+            android:layout_marginTop="30dp" />
+
+        <RelativeLayout
+            android:id="@+id/login_phone"
+            style="@style/putao_List_SINGLE_ITEM_Style"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="doClick" >
+
+            <ImageView
+                android:id="@+id/login_phone_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/putao_about_us"
+                android:src="@drawable/putao_icon_account_phone" />
+
+            <TextView
+                android:id="@+id/login_phone_name"
+                style="@style/putao_List_SIGNLE_ITEM_PRIMARY_TEXT_STYLE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/putao_listview_item_imgcontentgap"
+                android:layout_toRightOf="@+id/login_phone_img"
+                android:text="@string/putao_text_login_phone_name" />
+
+            <TextView
+                android:id="@+id/login_phone_status"
+                style="@style/putao_List_SIGNLE_ITEM_SECOND_TEXT_STYLE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="@string/putao_text_status_unlogin" />
+
+            <!-- <ImageView -->
+            <!-- android:id="@+id/indicator" -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:layout_alignParentRight="true" -->
+            <!-- android:layout_centerVertical="true" -->
+            <!-- android:contentDescription="@string/putao_about_us" -->
+            <!-- android:src="@drawable/putao_arrow_right_selector" /> -->
+        </RelativeLayout>
+
+        <View style="@style/putao_MyItemLineStyle" />
+
+        <RelativeLayout
+            android:id="@+id/login_cool_cloud"
+            style="@style/putao_List_SINGLE_ITEM_Style"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="doClick" >
+
+            <ImageView
+                android:id="@+id/login_cool_cloud_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/putao_about_us"
+                android:src="@drawable/putao_icon_account_kuyun" />
+
+            <TextView
+                android:id="@+id/login_cool_cloud_name"
+                style="@style/putao_List_SIGNLE_ITEM_PRIMARY_TEXT_STYLE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/putao_listview_item_imgcontentgap"
+                android:layout_toRightOf="@+id/login_cool_cloud_img"
+                android:text="@string/putao_text_login_cool_cloud_name" />
+
+            <TextView
+                android:id="@+id/login_cool_cloud_status"
+                style="@style/putao_List_SIGNLE_ITEM_SECOND_TEXT_STYLE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="@string/putao_text_status_unlogin" />
+
+            <!-- <ImageView -->
+            <!-- android:id="@+id/login_cool_cloud_indicator" -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:layout_alignParentRight="true" -->
+            <!-- android:layout_centerVertical="true" -->
+            <!-- android:contentDescription="@string/putao_about_us" -->
+            <!-- android:src="@drawable/putao_arrow_right_selector" /> -->
+        </RelativeLayout>
+
+        <View style="@style/putao_MyItemLineStyle" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <Button
+                android:id="@+id/login_out_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/putao_click_btn_bg_white"
+                android:onClick="doClick"
+                android:text="@string/putao_logout"
+                android:textColor="@color/putao_text_color_importance"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/putao_bg_grey"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/express_setting"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_marginLeft="62dp"
+        android:gravity="center|left"
+        android:textColor="#0d0d0d"
+        android:text="@string/putao_express_setting_hint"
+        android:textSize="@dimen/putao_text_size_c" >
+    </TextView>
+
+</LinearLayout>

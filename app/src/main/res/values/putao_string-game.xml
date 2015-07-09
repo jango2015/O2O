@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- 社交游戏 -->
+    <string name="putao_game_center">社交游戏</string>
+    <string name="putao_game_desc">游戏详情</string>
+    <string name="putao_game_desc_info">内容摘要</string>    
+    <string name="putao_network_no_connect">网络未连接</string>
+    <string name="putao_contacts_plus_user">通讯录plus用户</string>
+    <string name="putao_fail_to_getapp_key">获取app key失败!</string>
+    <string name="putao_game_sdk_loading">加载中...</string>
+
+    <!-- 游戏中心 -->
+    <string name="putao_allow">允许</string>
+    <string name="putao_download_title">已下载的游戏(%1$d)</string>
+    <string name="putao_uninstall_tips">未下载的游戏(%1$d)</string>
+    <string name="putao_uninstall_game">未下载游戏</string>
+    <string name="putao_no_download_game">没有游戏下载</string>
+    <string name="putao_no_installed_game">没有已安装的游戏</string>
+    <string name="putao_download">下载</string>
+    <string name="putao_click_download">点击下载</string>
+    <string name="putao_game_downloading">下载中</string>
+    <string name="putao_started">启动</string>
+    <string name="putao_installing">安装中</string>
+    <string name="putao_download_request_enqueue">正在下载</string>
+    <string name="putao_download_count_desc">当前游戏下载数 %1$d</string>
+    <string name="putao_friends_play_desc">有%1$d个好友在玩</string>
+    <string name="putao_install_pack_size_desc">安装包大小: %1$sM</string>
+    <string name="putao_game_ppl">葡萄泡泡</string>
+    <string name="putao_game_ermj">二人麻将</string>
+    <string name="putao_game_zrddz">真人斗地主</string>
+
+    <!-- 授权  -->
+    <string name="putao_authorize_tips">请先授权</string>
+    
+</resources>

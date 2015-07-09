@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+<!--     <group> -->
+<!--         <item android:title="@string/putao_menu_call_settings_dialpad" android:orderInCategory="1"/> -->
+<!--     </group> -->
+    
+    <item
+        android:id="@+id/menu_call_settings_dialpad"
+        android:title="@string/putao_menu_call_settings_dialpad"
+        android:showAsAction="withText"
+        android:orderInCategory="1" />
+    <item
+        android:id="@+id/menu_smart_ip_call"
+        android:title="@string/putao_smart_ip_call"
+        android:showAsAction="withText"
+        android:orderInCategory="1" />
+</menu>

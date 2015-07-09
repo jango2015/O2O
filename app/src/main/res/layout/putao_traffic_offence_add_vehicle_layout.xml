@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/info_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            style="@style/putao_List_SINGLE_ITEM_Style"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="@string/putao_traffic_query_area" />
+
+            <TextView
+                android:id="@+id/vehicle_region"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/putao_listview_item_imgcontentgap"
+                android:background="@drawable/putao_edit_bg_grey"
+                android:drawablePadding="8dp"
+                android:drawableRight="@drawable/putao_putao_icon_list_packup"
+                android:gravity="center_vertical"
+                android:hint="@string/putao_traffic_select"
+                android:minHeight="54dp"
+                android:singleLine="true"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <!-- <ImageView -->
+            <!-- android:layout_width="24dp" -->
+            <!-- android:layout_height="24dp" -->
+            <!-- android:layout_alignParentRight="true" -->
+            <!-- android:layout_centerVertical="true" -->
+            <!-- android:contentDescription="@string/putao_about_us" -->
+            <!-- android:src="@drawable/putao_search_down_arrow" /> -->
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/carnum_layout"
+            style="@style/putao_List_SINGLE_ITEM_Style"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|left"
+                android:text="@string/putao_traffic_car_number" />
+
+            <TextView
+                android:id="@+id/province_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|left"
+                android:paddingLeft="10dp"
+                android:text=""
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/car_num"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:hint="@string/putao_traffic_edit_hint_input_car_number"
+                android:imeOptions="actionSearch"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/engine_layout"
+            style="@style/putao_List_SINGLE_ITEM_Style"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|left"
+                android:text="@string/putao_traffic_engine_number" />
+
+            <EditText
+                android:id="@+id/engine_num"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:hint="@string/putao_traffic_input_engine_number"
+                android:singleLine="true"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/vehicle_hint1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/putao_icon_list_tips" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/vin_layout"
+            style="@style/putao_List_SINGLE_ITEM_Style"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|left"
+                android:text="@string/putao_traffic_frame_number" />
+
+            <EditText
+                android:id="@+id/vin_num"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:hint="@string/putao_traffic_input_frame_number"
+                android:imeOptions="actionSearch"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/vehicle_hint2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/putao_icon_list_tips" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/vehicle_info_commit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/info_ll"
+        android:layout_margin="@dimen/putao_btn_margin_size"
+        android:text="@string/putao_traffic_commit" >
+    </Button>
+
+    <LinearLayout
+        android:id="@+id/vehicle_delete_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" 
+        android:visibility="gone">
+
+        <View style="@style/putao_DividerStyle" />
+
+        <ImageButton
+            android:id="@+id/delete_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:background="@color/putao_transparent"
+            android:contentDescription="@string/putao_app_name"
+            android:src="@drawable/putao_express_history_delete_btn_bg" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="8dp"
+            android:text="@string/putao_common_delete"
+            android:textSize="@dimen/putao_text_size_d" />
+    </LinearLayout>
+
+</RelativeLayout>

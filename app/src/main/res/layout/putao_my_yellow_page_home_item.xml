@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <!--  去掉livetitle功能  modified by hyl 2014-12-23 start -->
+<!--     <so.contacts.hub.widget.SlideView -->
+<!--         android:id="@+id/yellow_page_img_item_slide" -->
+<!--         android:layout_width="wrap_content" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:layout_centerHorizontal="true" -->
+<!--         android:gravity="center" -->
+<!--         android:orientation="vertical" -->
+<!--         android:scaleType="center" -->
+<!--         app:slideDirect="upToDown" -->
+<!--         app:slideDuration="300" -->
+<!--         app:slideInterpolator="@android:anim/accelerate_interpolator" /> -->
+    
+    <ImageView
+        android:id="@+id/yellow_page_img_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/putao_offen_imgview_margintop"
+        android:layout_centerHorizontal="true"
+        />
+    <!--  去掉livetitle功能  modified by hyl 2014-12-23 end -->
+
+    <ViewStub
+        android:id="@+id/yellow_page_item_remind_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/yellow_page_img_item"
+        android:layout_alignTop="@+id/yellow_page_img_item"
+        android:layout="@layout/putao_remind_layout" />
+
+    <TextView
+        android:id="@+id/yellow_page_item"
+        style="@style/putao_yellow_page_item"
+        android:layout_below="@+id/yellow_page_img_item"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/putao_offen_textview_margintop"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="@string/putao_yellow_page_shopping"
+        android:textColor="@color/putao_home_gridview_item_color"
+        android:textSize="@dimen/putao_yp_home_gridview_textsize" />
+
+</RelativeLayout>

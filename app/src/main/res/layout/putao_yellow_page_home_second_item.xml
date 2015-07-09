@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:splitMotionEvents="false" >
+
+    <RelativeLayout
+        android:id="@+id/first_item"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/putao_yp_home_second_item_height"
+        android:layout_weight="1"
+        android:background="@drawable/putao_yp_listitem_seclector" >
+
+        <!-- delete by putao_lhq coolui6.0改动打点在文字右边显示与文字平行，去掉多个点布局，只保留一个 start -->
+        <!-- <ViewStub -->
+        <!-- android:id="@+id/first_remind_view_layout" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_alignParentRight="true" -->
+        <!-- android:layout_alignParentTop="true" -->
+        <!-- android:layout="@layout/putao_yellow_page_home_item_remind" /> -->
+
+
+        <!-- <ViewStub -->
+        <!-- android:id="@+id/first_remind_point_view_layout" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_marginLeft="@dimen/putao_all_remind_marginleft" -->
+        <!-- android:layout_marginTop="@dimen/putao_all_remind_margintop" -->
+        <!-- android:layout_toRightOf="@+id/first_name_text" -->
+        <!-- android:gravity="center" -->
+        <!-- android:layout="@layout/putao_yellow_page_home_item_remind" /> -->
+
+
+        <!-- <ViewStub -->
+        <!-- android:id="@+id/first_remind_point_digit_view_layout" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_marginLeft="@dimen/putao_all_remind_marginleft" -->
+        <!-- android:layout_marginTop="@dimen/putao_all_remind_margintop" -->
+        <!-- android:layout_toRightOf="@+id/first_name_text" -->
+        <!-- android:gravity="center" -->
+        <!-- android:layout="@layout/putao_yellow_page_home_item_remind" /> -->
+
+<!--         <ViewStub -->
+<!--             android:id="@+id/first_remind_view_layout" -->
+<!--             android:layout_width="wrap_content" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_centerVertical="true" -->
+<!--             android:layout_alignParentRight="true" -->
+<!--             android:layout_marginRight="8dp" -->
+<!--             android:layout="@layout/putao_yellow_page_home_item_remind" /> -->
+        <!-- delete by putao_lhq coolui6.0改动打点在文字右边显示与文字平行，去掉多个点布局，只保留一个 end -->
+
+
+        <!-- <so.contacts.hub.remind.simple.SimpleRemindView -->
+        <!-- android:id="@+id/first_remind_view" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_alignParentRight="true" -->
+        <!-- android:layout_alignParentTop="true" -->
+        <!-- android:singleLine="true" -->
+        <!-- android:visibility="visible" -->
+        <!-- /> -->
+
+
+        <!-- <so.contacts.hub.remind.simple.SimpleRemindView -->
+        <!-- android:id="@+id/first_remind_point_view" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_marginLeft="@dimen/putao_all_remind_marginleft" -->
+        <!-- android:layout_marginTop="@dimen/putao_all_remind_margintop" -->
+        <!-- android:layout_toRightOf="@+id/first_name_text" -->
+        <!-- android:gravity="center" -->
+        <!-- android:singleLine="true" -->
+        <!-- android:background="@color/putao_red" -->
+        <!-- android:visibility="gone" /> -->
+
+
+        <!-- <so.contacts.hub.remind.simple.SimpleRemindView -->
+        <!-- android:id="@+id/first_remind_point_digit_view" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_marginLeft="@dimen/putao_all_remind_marginleft" -->
+        <!-- android:layout_marginTop="@dimen/putao_all_remind_margintop" -->
+        <!-- android:layout_toRightOf="@+id/first_name_text" -->
+        <!-- android:gravity="center" -->
+        <!-- android:singleLine="true" -->
+        <!-- android:visibility="gone" /> -->
+
+        <ImageView
+            android:id="@+id/first_item_img_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/putao_yp_home_listview_item_margin_left"
+            android:layout_marginRight="@dimen/putao_yp_home_listview_item_margin_right"
+            android:paddingLeft="13dp" />
+
+        <TextView
+            android:id="@+id/first_name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/first_item_img_view"
+            android:gravity="center_vertical"
+            android:text="@string/putao_yellow_page_shopping"
+            android:textColor="@color/putao_yp_home_listview_textcolor"
+            android:textSize="@dimen/putao_text_tertiary_size" />
+        
+        <ViewStub
+            android:id="@+id/first_remind_view_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="9dp"
+            android:layout_toRightOf="@id/first_name_text"
+            android:layout="@layout/putao_yellow_page_home_item_remind" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="@dimen/putao_divider_line_size"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:background="@color/putao_yellow_page_line_color" />
+
+    <RelativeLayout
+        android:id="@+id/second_item"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/putao_yp_home_second_item_height"
+        android:layout_weight="1"
+        android:background="@drawable/putao_yp_listitem_seclector" >
+
+        <!-- delete by putao_lhq coolui6.0改动打点在文字右边显示与文字平行，去掉多个点布局，只保留一个 start -->
+        <!-- <ViewStub -->
+        <!-- android:id="@+id/second_remind_view_layout" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_alignParentRight="true" -->
+        <!-- android:layout_alignParentTop="true" -->
+        <!-- android:layout="@layout/putao_yellow_page_home_item_remind" /> -->
+
+
+        <!-- <ViewStub -->
+        <!-- android:id="@+id/second_remind_point_view_layout" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_marginLeft="@dimen/putao_all_remind_marginleft" -->
+        <!-- android:layout_marginTop="@dimen/putao_all_remind_margintop" -->
+        <!-- android:layout_toRightOf="@+id/second_name_text" -->
+        <!-- android:gravity="center" -->
+        <!-- android:layout="@layout/putao_yellow_page_home_item_remind" /> -->
+
+
+        <!-- <ViewStub -->
+        <!-- android:id="@+id/second_remind_point_digit_view_layout" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_marginLeft="@dimen/putao_all_remind_marginleft" -->
+        <!-- android:layout_marginTop="@dimen/putao_all_remind_margintop" -->
+        <!-- android:layout_toRightOf="@+id/second_name_text" -->
+        <!-- android:gravity="center" -->
+        <!-- android:layout="@layout/putao_yellow_page_home_item_remind" /> -->
+
+<!--         <ViewStub -->
+<!--             android:id="@+id/second_remind_view_layout" -->
+<!--             android:layout_width="wrap_content" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_centerVertical="true" -->
+<!--             android:layout_alignParentRight="true" -->
+<!--             android:layout_marginRight="8dp" -->
+<!--             android:layout="@layout/putao_yellow_page_home_item_remind" /> -->
+        <!-- delete by putao_lhq coolui6.0改动打点在文字右边显示与文字平行，去掉多个点布局，只保留一个 end -->
+        <!-- <so.contacts.hub.remind.simple.SimpleRemindView -->
+        <!-- android:id="@+id/second_remind_view" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_alignParentRight="true" -->
+        <!-- android:layout_alignParentTop="true" -->
+        <!-- android:singleLine="true" -->
+        <!-- android:visibility="gone" /> -->
+
+
+        <!-- <so.contacts.hub.remind.simple.SimpleRemindView -->
+        <!-- android:id="@+id/second_remind_point_view" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_marginLeft="@dimen/putao_all_remind_marginleft" -->
+        <!-- android:layout_marginTop="@dimen/putao_all_remind_margintop" -->
+        <!-- android:layout_toRightOf="@+id/second_name_text" -->
+        <!-- android:gravity="center" -->
+        <!-- android:singleLine="true" -->
+        <!-- android:visibility="gone" /> -->
+
+
+        <!-- <so.contacts.hub.remind.simple.SimpleRemindView -->
+        <!-- android:id="@+id/second_remind_point_digit_view" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_marginLeft="@dimen/putao_all_remind_marginleft" -->
+        <!-- android:layout_marginTop="@dimen/putao_all_remind_margintop" -->
+        <!-- android:layout_toRightOf="@+id/second_name_text" -->
+        <!-- android:gravity="center" -->
+        <!-- android:singleLine="true" -->
+        <!-- android:text="2" -->
+        <!-- android:background="@drawable/putao_icon_prompt" -->
+        <!-- android:visibility="visible" /> -->
+
+        <ImageView
+            android:id="@+id/second_item_img_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/putao_yp_home_listview_item_margin_left"
+            android:layout_marginRight="@dimen/putao_yp_home_listview_item_margin_right"
+            android:paddingLeft="13dp" />
+
+        <TextView
+            android:id="@+id/second_name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/second_item_img_view"
+            android:gravity="center_vertical"
+            android:text="@string/putao_yellow_page_shopping"
+            android:textColor="@color/putao_yp_home_listview_textcolor"
+            android:textSize="@dimen/putao_text_tertiary_size" />
+        
+        <ViewStub
+            android:id="@+id/second_remind_view_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="9dp"
+            android:layout_toRightOf="@id/second_name_text"
+            android:layout="@layout/putao_yellow_page_home_item_remind" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/second_divider_line"
+        android:layout_width="@dimen/putao_divider_line_size"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:background="@color/putao_yellow_page_line_color" />
+
+    <RelativeLayout
+        android:id="@+id/third_item"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/putao_yp_home_second_item_height"
+        android:layout_weight="1"
+        android:background="@drawable/putao_yp_listitem_seclector" >
+
+        <!-- delete by putao_lhq coolui6.0改动打点在文字右边显示与文字平行，去掉多个点布局，只保留一个 start -->
+        <!-- <ViewStub -->
+        <!-- android:id="@+id/third_remind_view_layout" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_alignParentRight="true" -->
+        <!-- android:layout_alignParentTop="true" -->
+        <!-- android:layout="@layout/putao_yellow_page_home_item_remind" /> -->
+
+
+        <!-- <ViewStub -->
+        <!-- android:id="@+id/third_remind_point_view_layout" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_marginLeft="@dimen/putao_all_remind_marginleft" -->
+        <!-- android:layout_marginTop="@dimen/putao_all_remind_margintop" -->
+        <!-- android:layout_toRightOf="@+id/third_name_text" -->
+        <!-- android:gravity="center" -->
+        <!-- android:layout="@layout/putao_yellow_page_home_item_remind" /> -->
+
+
+        <!-- <ViewStub -->
+        <!-- android:id="@+id/third_remind_point_digit_view_layout" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_marginLeft="@dimen/putao_all_remind_marginleft" -->
+        <!-- android:layout_marginTop="@dimen/putao_all_remind_margintop" -->
+        <!-- android:layout_toRightOf="@+id/third_name_text" -->
+        <!-- android:gravity="center" -->
+        <!-- android:layout="@layout/putao_yellow_page_home_item_remind" /> -->
+
+<!--         <ViewStub -->
+<!--             android:id="@+id/third_remind_view_layout" -->
+<!--             android:layout_width="wrap_content" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_centerVertical="true" -->
+<!--             android:layout_alignParentRight="true" -->
+<!--             android:layout_marginRight="8dp" -->
+<!--             android:layout="@layout/putao_yellow_page_home_item_remind" /> -->
+        <!-- delete by putao_lhq coolui6.0改动打点在文字右边显示与文字平行，去掉多个点布局，只保留一个 end -->
+        <!-- <so.contacts.hub.remind.simple.SimpleRemindView -->
+        <!-- android:id="@+id/third_remind_view" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_alignParentRight="true" -->
+        <!-- android:layout_alignParentTop="true" -->
+        <!-- android:singleLine="true" -->
+        <!-- android:visibility="gone" /> -->
+
+
+        <!-- <so.contacts.hub.remind.simple.SimpleRemindView -->
+        <!-- android:id="@+id/third_remind_point_view" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_marginLeft="@dimen/putao_all_remind_marginleft" -->
+        <!-- android:layout_marginTop="@dimen/putao_all_remind_margintop" -->
+        <!-- android:layout_toRightOf="@+id/third_name_text" -->
+        <!-- android:gravity="center" -->
+        <!-- android:singleLine="true" -->
+        <!-- android:visibility="gone" /> -->
+
+
+        <!-- <so.contacts.hub.remind.simple.SimpleRemindView -->
+        <!-- android:id="@+id/third_remind_point_digit_view" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_marginLeft="@dimen/putao_all_remind_marginleft" -->
+        <!-- android:layout_marginTop="@dimen/putao_all_remind_margintop" -->
+        <!-- android:layout_toRightOf="@+id/third_name_text" -->
+        <!-- android:gravity="center" -->
+        <!-- android:singleLine="true" -->
+        <!-- android:visibility="gone" /> -->
+
+        <ImageView
+            android:id="@+id/third_item_img_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/putao_yp_home_listview_item_margin_left"
+            android:layout_marginRight="@dimen/putao_yp_home_listview_item_margin_right"
+            android:paddingLeft="13dp" />
+
+        <TextView
+            android:id="@+id/third_name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/third_item_img_view"
+            android:gravity="center_vertical"
+            android:text="@string/putao_yellow_page_shopping"
+            android:textColor="@color/putao_yp_home_listview_textcolor"
+            android:textSize="@dimen/putao_text_tertiary_size" />
+        
+        <ViewStub
+            android:id="@+id/third_remind_view_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="9dp"
+            android:layout_toRightOf="@id/third_name_text"
+            android:layout="@layout/putao_yellow_page_home_item_remind" />
+    </RelativeLayout>
+
+</LinearLayout>

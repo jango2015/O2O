@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- modified by hyl 2014-12-31 start 注释掉ScrollView -->
+    <!-- <ScrollView -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="match_parent" -->
+    <!-- android:fillViewport="true" > -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <so.contacts.hub.widget.AdOperatLayout
+            android:id="@id/ad_view_layout_top"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/putao_adlayout_height"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:visibility="gone" >
+        </so.contacts.hub.widget.AdOperatLayout>
+
+        <!-- so.contacts.hub.widget.My -->
+
+        <ListView
+            android:id="@+id/movie_list"
+            style="@style/putao_ListStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:divider="@null"
+            android:fadingEdgeLength="0dp"
+            android:scrollbars="none"
+            android:splitMotionEvents="false" />
+    </LinearLayout>
+    <!-- </ScrollView> -->
+    <!-- modified by hyl 2014-12-31 end -->
+
+    <LinearLayout
+        android:id="@+id/network_exception_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone" >
+
+        <include layout="@layout/putao_network_not_login_exception_layout" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/putao_bg_card_huochepiao"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/putao_orderitem_contentleftrightpadding"
+    android:paddingRight="@dimen/putao_orderitem_contentleftrightpadding"
+    android:paddingTop="@dimen/putao_orderitem_contenttoppadding"
+   >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/putao_order_list_head_height"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        layout="@layout/putao_my_order_item_head" />
+
+    <RelativeLayout
+        android:id="@+id/orderlist_train_info_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/putao_order_list_content_height"
+        >
+
+        <LinearLayout
+            android:id="@+id/orderlist_train_from"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/putao_orderitem_contenttoppadding"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/train_from"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/putao_order_list_content_color"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/train_from_pinyin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/putao_order_list_title_color"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/train_from_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:ellipsize="end"
+                android:paddingTop="10dp"
+                android:singleLine="true"
+                android:textColor="@color/putao_order_list_subcontent_color"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/train_from_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/putao_order_list_subcontent_color"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/orderlist_train_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/putao_icon_btn_id_huoche_a"
+            android:contentDescription="@string/putao_about_us" />
+
+        <LinearLayout
+            android:id="@+id/orderlist_train_to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="@dimen/putao_orderitem_contenttoppadding"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/train_to"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/putao_order_list_content_color"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/train_to_pinyin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/putao_order_list_title_color"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/train_to_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:ellipsize="end"
+                android:paddingTop="10dp"
+                android:singleLine="true"
+                android:textColor="@color/putao_order_list_subcontent_color"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/train_to_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/putao_order_list_subcontent_color"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/putao_order_list_foot_height"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        layout="@layout/putao_my_order_item_foot" />
+
+</LinearLayout>

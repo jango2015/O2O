@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:orientation="vertical"
+    android:splitMotionEvents="false" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp" >
+
+        <RadioGroup
+            android:id="@+id/number_choosegroup"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RadioButton
+                android:id="@+id/number_choose1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:button="@null"
+                android:checked="true"
+                android:drawableRight="@drawable/putao_btn_radio_holo"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/putao_yellow_page_error_collect_hint1" >
+            </RadioButton>
+
+            <View
+                style="@style/putao_MyItemLineStyle"
+                android:layout_marginTop="3dp" />
+
+            <RadioButton
+                android:id="@+id/number_choose2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="3dp"
+                android:button="@null"
+                android:drawableRight="@drawable/putao_btn_radio_holo"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/putao_yellow_page_error_collect_hint2" >
+            </RadioButton>
+
+            <View
+                style="@style/putao_MyItemLineStyle"
+                android:layout_marginTop="3dp" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/putao_yellow_page_error_collect_others"
+        android:textColor="@color/putao_home_gridview_item_color"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/others_info"
+        style="@style/putao_EditStyle"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="5dp"
+        android:gravity="top|left"
+        android:hint="@string/putao_yellow_page_error_collect_others_info"
+        android:maxLength="500"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/putao_yellow_page_error_collect_contacts"
+        android:textColor="@color/putao_home_gridview_item_color"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/contacts_info"
+        style="@style/putao_EditStyle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:digits="1234567890"
+        android:gravity="center_vertical|left"
+        android:hint="@string/putao_yellow_page_error_collect_contacts_info"
+        android:maxLength="30"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:singleLine="true" />
+
+    <Button
+        android:id="@+id/commit_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/putao_btn_margin_size"
+        android:layout_marginLeft="@dimen/putao_btn_margin_size"
+        android:layout_marginRight="@dimen/putao_btn_margin_size"
+        android:text="@string/putao_yellow_page_error_collect_commit"/>
+
+</LinearLayout>

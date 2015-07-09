@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="putao_phone_title_array">
+        <item>住宅</item>
+        <item>手机</item>
+        <item>单位</item>
+        <item>单位传真</item>
+        <item>住宅传真</item>
+        <item>寻呼机</item>
+        <item>其他</item>
+        <item>回拨号码</item>
+        <item>自定义</item>
+    </string-array>
+    <string-array name="putao_self_add_array">
+        <item>个人邮箱</item>
+        <item>工作邮箱</item>
+        <item>手机邮箱</item>
+        <item>其他邮箱</item>
+        <item>自定义</item>
+    </string-array>
+    <string-array name="putao_website_title_array">
+        <item>网站</item>
+        <item>网站</item>
+    </string-array>
+    <string-array name="putao_address_title_array">
+        <item>住宅</item>
+        <item>单位</item>
+        <item>其他</item>
+        <!-- <item>自定义</item> -->
+    </string-array>
+    <string-array name="putao_organization_title_array">
+        <item>公司</item>
+        <item>学校</item>
+        <item>其他</item>
+        <item>自定义</item>
+    </string-array>
+    <string-array name="putao_head_setting_options">
+        <item>拍照</item>
+        <item>从图片库中选择照片</item>
+        <item>移除照片</item>
+        <!-- <item>使用推荐头像</item> -->
+    </string-array>
+    <!--
+    <string-array name="putao_array_add_info"> 
+        <item>昵称</item>
+        <item>生日</item>
+        <item>纪念日</item>
+        <item>爱好</item>
+        <item>地址</item>
+        <item>籍贯</item>
+        <item>备注</item>
+        <item>自定义</item>
+    </string-array> 
+    -->
+    <!--
+          <item>生日</item>
+        <item>纪念日</item>
+        <item>铃声</item>
+        <item>爱好</item>
+    -->
+    <!--
+    <string-array name="putao_array_add_work">
+    	<item>公司</item>
+    	<item>学校</item>
+    	<item>其他</item>
+        <item>自定义</item>
+    </string-array>
+    <string-array name="putao_array_add_network"> 
+        <item>Email</item> 
+        <item>网站</item>
+        <item>QQ</item>
+        <item>MSN</item>
+        <item>新浪</item>
+        <item>开心</item>
+        <item>人人</item>
+        <item>Gtalk</item>
+        <item>Skype</item>
+        <item>雅虎</item>
+        <item>旺旺</item>
+        <item>自定义</item>
+    </string-array>
+    <string-array name="putao_array_add_type">
+    	<item>添加联系人</item>
+    -->
+    <!-- <item>添加分组</item> -->
+    <!--
+    <item>添加企业(商户)</item>
+    </string-array>
+    -->
+    <string-array name="putao_photo">
+        <item>拍照</item>
+        <item>从图库中选择照片</item> <!-- 采用已有照片 -->
+        <!-- <item>使用推荐头像</item> -->
+    </string-array>
+    <string-array name="putao_photo_new">
+        <item>拍照</item>
+        <item>从图库中选择照片</item>
+    </string-array>
+    <!--
+        <string-array name="putao_arrray_add_business">
+    	<item>别称</item>
+    	<item>地址</item>
+    -->
+    <!-- <item>铃声</item> -->
+    <!--
+    <item>自定义</item>
+    </string-array>
+    -->
+    <string-array name="putao_hobby_select">
+        <item>音乐</item>
+        <item>运动</item>
+        <item>电影</item>
+        <item>购物</item>
+        <item>数码</item>
+        <item>餐饮</item>
+        <item>美容</item>
+        <item>旅游</item>
+        <item>休闲</item>
+    </string-array>
+    <string-array name="putao_item_name_array">
+        <item>电话</item>
+        <item>Email</item>
+        <item>网站</item>
+        <item>网络账号</item>
+        <item>地址</item>
+        <item>昵称</item>
+        <item>籍贯</item>
+        <item>生日</item>
+        <item>纪念日</item>
+        <item>组织</item>
+        <item>备注</item>
+        <item>相关联系人</item>
+        <item>分组</item>
+        <item>铃声</item>
+    </string-array>
+    <string-array name="putao_item_shop_array">
+        <item>网站</item>
+        <item>生日</item>
+        <item>备注</item>
+    </string-array>
+    <string-array name="putao_special_cities">
+        <item>热门城市</item>
+        <item>北京</item>
+        <item>上海</item>
+        <item>广州</item>
+        <item>深圳</item>
+        <item>全部城市</item>
+    </string-array>
+    <string-array name="putao_special_expresses">
+        <item>常用</item>
+        <item>顺丰速运,sf</item>
+        <item>申通快递,sto</item>
+        <item>EMS,ems</item>
+        <item>韵达快递,yd</item>
+        <item>圆通速递,yt</item>
+        <item>中通快递,zt</item>
+        <item>全部</item>
+    </string-array>
+    <string-array name="putao_item_sougou_mark">
+        <item>推销</item>
+        <item>中介</item>
+        <item>同事</item>
+        <item>朋友</item>
+        <item>快递</item>
+        <item>外卖</item>
+        <item>诈骗</item>
+    </string-array>
+
+    <array name="putao_country_codes">
+        <item>-</item>
+        <item>AR</item>
+        <item>AU</item>
+        <item>BR</item>
+        <item>BG</item>
+        <item>CA</item>
+        <item>CN</item>
+        <item>CZ</item>
+        <item>DE</item>
+        <item>DK</item>
+        <item>ES</item>
+        <item>FI</item>
+        <item>FR</item>
+        <item>GB</item>
+        <item>GR</item>
+        <item>HU</item>
+        <item>ID</item>
+        <item>IT</item>
+        <item>JP</item>
+        <item>KR</item>
+        <item>NL</item>
+        <item>PL</item>
+        <item>PT</item>
+        <item>RU</item>
+        <item>SE</item>
+        <item>SK</item>
+        <item>SI</item>
+        <item>TR</item>
+        <item>TW</item>
+        <item>US</item>
+    </array>
+    <array name="putao_express_Signoff_string_array">
+        <item>签收</item>
+        <item>已签收</item>
+        <item>投递并签收</item>
+        <item>正常签收</item>
+        <item>签收人</item>
+    </array>
+    <array name="putao_serch_hotword">
+        <item>美食</item>
+        <item>便利店</item>
+        <item>ATM</item>
+        <item>开锁</item>
+        <item>noPrefix_可直接搜索公司或号码</item>
+        <!--
+ 用noPrefix_表示此字符串显示时没有前缀 如其他的为： 输入关键字搜索，比如 开锁
+         此条为 ：可直接搜索公司或号码
+        -->
+    </array>
+    <array name="putao_week_list">
+        <item>周日</item>
+        <item>周一</item>
+        <item>周二</item>
+        <item>周三</item>
+        <item>周四</item>
+        <item>周五</item>
+        <item>周六</item>
+    </array>
+    <array name="putao_hotel_star">
+        <item>不限</item>
+        <item>五星/豪华</item>
+        <item>四星/高档</item>
+        <item>三星/舒适</item>
+        <item>快捷酒店/客栈</item>
+    </array>
+    <array name="putao_hotel_star_level">
+        <item></item>
+        <item>1,76</item>
+        <item>2,77</item>
+        <item>3,78</item>
+        <item>63</item>
+    </array>
+    <array name="putao_hotel_price">
+        <item>不限</item>
+        <item>0-150</item>
+        <item>150-300</item>
+        <item>300-500</item>
+        <item>500以上</item>
+    </array>
+    <array name="putao_hotel_price_level">
+        <item></item>
+        <item>0,150</item>
+        <item>150,300</item>
+        <item>300,500</item>
+        <item>500,</item>
+    </array>
+    <array name="putao_hotel_sort">
+        <item>默认排序</item>
+        <item>价格最低</item>
+        <item>价格最高</item>
+        <item>人气最高</item>
+        <item>推荐度</item>
+        <item>离我最近</item>
+    </array>
+    <array name="putao_hotel_sort_level">
+        <item>6</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </array>
+    <array name="putao_hotelorder_arrivedate">
+        <item>18:00</item>
+        <item>20:00</item>
+        <item>22:00</item>
+        <item>24:00</item>
+        <item>次日05:00</item>
+    </array>
+    <array name="putao_hotelorder_arrivedate_data">
+        <item>1900-01-01 18:00</item>
+        <item>1900-01-01 20:00</item>
+        <item>1900-01-01 22:00</item>
+        <item>1900-01-02 00:00</item>
+        <item>1900-01-02 05:00</item>
+    </array>
+    <array name="putao_hotel_cancelorder_case">
+        <item>行程变更</item>
+        <item>通过其他更优惠的渠道预订了酒店</item>
+        <item>不满意同程的服务</item>
+        <item>其他原因</item>
+        <item>信息错误重新预定</item>
+        <item>预定流程不方便</item>
+        <item>变更流程不方便</item>
+    </array>
+    <array name="putao_hotelpay_creditcard_bank">
+        <item>中国工商银行信用卡</item>
+        <item>招商银行信用卡</item>
+        <item>中国建设银行信用卡</item>
+        <item>中国民生银行信用卡</item>
+        <item>中国银行信用卡</item>
+        <item>交通银行信用卡</item>
+        <item>上海浦东发展银行信用卡</item>
+        <item>中国农业银行信用卡</item>
+        <item>光大银行信用卡</item>
+        <item>上海农商银行信用卡</item>
+        <item>大连银行信用卡</item>
+    </array>
+    <array name="putao_hotelpay_certificate_type">
+        <item>身份证</item>
+        <item>护照</item>
+        <item>军官证</item>
+        <item>台胞证</item>
+        <item>其他证件</item>
+    </array>
+    <array name="putao_hotelpay_calendar">
+        <item>一月</item>
+        <item>二月</item>
+        <item>三月</item>
+        <item>四月</item>
+        <item>五月</item>
+        <item>六月</item>
+        <item>七月</item>
+        <item>八月</item>
+        <item>九月</item>
+        <item>十月</item>
+        <item>十一月</item>
+        <item>十二月</item>
+    </array>
+    <array name="putao_idtype">
+        <item>身份证</item>
+        <item>护照</item>
+        <item>台胞证</item>
+        <item>港澳通行证</item>
+        <item>儿童</item>
+    </array>
+    <array name="putao_subway_cities">
+        <item>北京,1100,beijing</item>
+        <item>上海,3100,shanghai</item>
+        <item>广州,4401,guangzhou</item>
+        <item>深圳,4403,shenzhen</item>
+        <item>武汉,4201,wuhan</item>
+        <item>天津,1200,tianjing</item>
+        <item>南京,3201,nanjing</item>
+        <item>香港,8100,xianggang</item>
+        <item>重庆,5000,chongqing</item>
+        <item>杭州,3301,hangzhou</item>
+        <item>沈阳,2101,shenyang</item>
+        <item>大连,2102,dalian</item>
+        <item>成都,5101,chengdou</item>
+        <item>长春,2201,changchun</item>
+        <item>苏州,3205,suzhou</item>
+        <item>佛山,4406,foshan</item>
+        <item>昆明,5301,kunming</item>
+        <item>西安,6101,xian</item>
+        <item>郑州,4101,zhenzhou</item>
+        <item>哈尔滨,2301,haerbing</item>
+        <item>长沙,4301,changsha</item>
+        <item>宁波,3302,ningbo</item>
+    </array>
+    <array name="putao_pingyin_chartable">
+        <item>啊</item>
+        <item>芭</item>
+        <item>擦</item>
+        <item>搭</item>
+        <item>蛾</item>
+        <item>发</item>
+        <item>噶</item>
+        <item>哈</item>
+        <item>哈</item>
+        <item>击</item>
+        <item>喀</item>
+        <item>垃</item>
+        <item>妈</item>
+        <item>拿</item>
+        <item>哦</item>
+        <item>啪</item>
+        <item>期</item>
+        <item>然</item>
+        <item>撒</item>
+        <item>塌</item>
+        <item>塌</item>
+        <item>塌</item>
+        <item>挖</item>
+        <item>昔</item>
+        <item>压</item>
+        <item>匝</item>
+    </array>
+    <array name="putao_traffic_type_unicom">
+        <item>50M</item>
+        <item>200M</item>
+    </array>
+    <array name="putao_mulit_voice">
+        <item>晟,cheng</item>
+        <item>种,chong</item>
+        <item>单,shan</item>
+        <item>解,xie</item>
+        <item>查,zha</item>
+        <item>曾,zeng</item>
+        <item>盖,ge</item>
+        <item>缪,miao</item>
+        <item>朴,piao</item>
+        <item>区,ou</item>
+        <item>繁,po</item>
+        <item>仇,qiu</item>
+        <item>么,yao</item>
+        <item>召,shao</item>
+        <item>乐,yue</item>
+        <item>翟,zhai</item>
+        <item>覃,qin</item>
+        <item>宓,fu</item>
+        <item>虎,mao</item>
+        <item>仉,zhang</item>
+        <item>祭,zhai</item>
+        <item>褚,chu</item>
+        <item>郇,huan</item>
+        <item>洗,xian</item>
+        <item>眭,sui</item>
+        <item>阚,kan</item>
+        <item>秘,bi</item>
+        <item>弗,fei</item>
+        <item>藉,ji</item>
+        <item>适,kuo</item>
+        <item>句,gou</item>
+        <item>乜,nie</item>
+        <item>员,yun</item>
+        <item>厘,xi</item>
+        <item>宿,su</item>
+        <item>盛,sheng</item>
+        <item>折,she</item>
+        <item>尉迟,yu 尉 chi 迟</item>
+        <item>万俟,mo 万 qi 俟</item>
+        <item>重庆,chong 重 qing 庆</item>
+        <item>长治,chang 长 zhi 治</item>
+        <item>长春,chang 长 chun 春</item>
+        <item>长沙,chang 长 sha 沙</item>
+        <item>乐山,le 乐 shan 山</item>
+        <item>乐东,le 乐 dong 东</item>
+        <item>厦门,xia 厦 men 门</item>
+    </array>
+    <array name="putao_traffic_type">
+        <item>2G 流量充值</item>
+        <item>3G 流量充值</item>
+    </array>
+    <array name="putao_traffic_type_telecom">
+        <item>60M</item>
+        <item>150M</item>
+        <item>300M</item>
+    </array>
+    <array name="putao_traffic_type_mobile_beijing">
+        <item>70M</item>
+    </array>
+    <array name="putao_traffic_type_mobile_guangdong">
+        <item>10M</item>
+        <item>30M</item>
+        <item>70M</item>
+        <item>150M</item>
+        <item>280M</item>
+        <item>600M</item>
+        <item>1024M</item>
+        <item>2048M</item>
+        <item>5120M</item>
+    </array>
+
+
+
+    <array name="week_list">
+        <item>周日</item>
+        <item>周一</item>
+        <item>周二</item>
+        <item>周三</item>
+        <item>周四</item>
+        <item>周五</item>
+        <item>周六</item>
+    </array>
+
+    <array name="query_chargez_province_list">
+        <item>移动</item>
+        <item>安徽</item>
+        <item>北京</item>
+        <item>重庆</item>
+    </array>
+     <array name="train_order_status">
+        <item>待付款</item>
+        <item>出票中</item>
+        <item>已出票</item>
+        <item>已退票</item>
+        <item>交易关闭</item>
+        <item>占座失败</item>
+        <item>出票失败</item>
+        <item>取消</item>
+    </array>
+    
+     <!-- 这四个地区查违章不需要输入发动机号 -->
+     <array name="putao_traffic_offence_spcical_pro">
+        <item>蒙</item>
+        <item>豫</item>
+        <item>粤</item>
+        <item>云</item>
+    </array>
+    
+     <!-- 火车票的订单状态 -->
+     <array name="putao_train_order_status">
+        <item>待付款</item>
+        <item>占座中</item>
+        <item>出票中</item>
+        <item>已出票</item>
+        <item>已发车</item>
+        <item>占座失败</item>
+        <item>已取消</item>
+        <item>过期</item>
+        <item>退票完成</item>
+        <item>驳回</item>
+    </array>
+    
+       <!-- 彩票 订单状态-->
+     <array name="putao_lottery_order_status">
+        <item>出票中</item>
+        <item>已出票</item>
+        <item>出票失败</item>
+        <item>已中奖</item>
+        <item>已派奖</item>
+        <item>未中奖</item>
+    </array>
+    
+    <!-- 城市列表：“省直辖县级行政区划”，“自治区直辖县级行政区划”等信息 -->
+    <array name="putao_city_directly_division">
+        <item>县</item>
+        <item>市辖区</item>
+        <item>省直辖县级行政区划</item>
+        <item>自治区直辖县级行政区划</item>
+    </array>
+     
+</resources>

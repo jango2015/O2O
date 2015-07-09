@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:state_pressed="true" android:drawable="@drawable/putao_icon_btn_off_p">
+		<corners
+		     android:topLeftRadius="5dp"
+		     android:topRightRadius="5dp"
+		     android:bottomRightRadius="5dp"      
+		     android:bottomLeftRadius="5dp"/>  
+    </item>
+    
+    <item android:state_selected="true" android:drawable="@drawable/putao_icon_btn_no">
+        <corners
+             android:topLeftRadius="5dp"
+             android:topRightRadius="5dp"
+             android:bottomRightRadius="5dp"      
+             android:bottomLeftRadius="5dp"/>  
+    </item>
+    
+	<item android:drawable="@drawable/putao_icon_btn_off">"
+        <corners
+             android:topLeftRadius="5dp"
+             android:topRightRadius="5dp"
+             android:bottomRightRadius="5dp"      
+             android:bottomLeftRadius="5dp"/>
+	    	        	    
+    </item>
+</selector>

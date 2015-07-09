@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/putao_translucent"
+    >
+
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/putao_traffic_window_foot_button_margin_middle"
+        android:layout_marginRight="@dimen/putao_traffic_window_foot_button_margin_middle"
+        >
+    
+    <RelativeLayout 
+	    android:id="@+id/header"
+	    android:layout_width="fill_parent"
+	    android:layout_height="@dimen/putao_title_bar_hight"
+	    android:background="@drawable/putao_tab_circle" >
+	    <TextView
+		    android:id="@+id/header_text"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="@color/putao_white"
+	        android:textSize="@dimen/putao_traffic_window_title_size"
+	        android:text="@string/putao_traffic_authcode_title"
+	        android:layout_centerVertical="true"
+	        android:paddingLeft="10dp"
+	    />
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:id="@+id/body"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/putao_traffic_window_body_height"
+        android:layout_below="@+id/header"
+        android:background="@color/putao_white"
+        >
+	    <EditText
+	      android:id="@+id/code_edittext"
+	      android:layout_width="@dimen/putao_traffic_window_edittext_width"
+          android:layout_height="@dimen/putao_traffic_window_edittext_height"
+          android:layout_centerInParent="true"
+          android:hint="@string/putao_traffic_authcode_hint"
+         >
+        </EditText>
+
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:id="@+id/foot"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/putao_traffic_window_foot_height"
+        android:layout_below="@+id/body"
+        android:background="@color/putao_pt_light_gray"
+        >
+	    <View 
+	        android:layout_width="1dp"
+            android:layout_height="wrap_content"
+	        android:id="@+id/middle_line"
+	        android:layout_centerHorizontal="true"
+	        >
+	    </View>
+        <Button
+            android:id="@+id/cancel_btn"
+            android:layout_width="@dimen/putao_traffic_window_foot_button_width"
+            android:layout_height="@dimen/putao_traffic_window_foot_button_height"
+            android:layout_marginRight="@dimen/putao_traffic_window_foot_button_margin_middle"
+            android:layout_alignRight="@id/middle_line"
+            android:text="@string/putao_query_telecharge_hint_cancel"
+            android:layout_centerVertical="true"
+            >
+        </Button>
+        <Button
+            android:id="@+id/confirm_btn"
+            android:layout_width="@dimen/putao_traffic_window_foot_button_width"
+            android:layout_height="@dimen/putao_traffic_window_foot_button_height"
+            android:layout_marginLeft="@dimen/putao_traffic_window_foot_button_margin_middle"
+            android:layout_alignLeft="@id/middle_line"
+            android:text="@string/putao_query_telecharge_hint_ok"
+            android:layout_centerVertical="true"
+            >
+        </Button>
+
+    </RelativeLayout>
+    
+    </RelativeLayout>
+
+</RelativeLayout>

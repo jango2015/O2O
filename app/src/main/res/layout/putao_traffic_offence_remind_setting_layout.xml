@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="96dp"
+    android:background="@color/putao_bg_grey"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/offence_setting_hint"
+        android:layout_width="0dp"
+        android:layout_height="96dp"
+        android:layout_marginLeft="62dp"
+        android:layout_weight="1"
+        android:gravity="center|left"
+        android:textSize="@dimen/putao_text_size_c" />
+
+    <Button
+        android:id="@+id/vehicle_info_setting"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/putao_comm_button_selector"
+        android:gravity="center"
+        android:layout_marginRight="@dimen/putao_btn_margin_size"
+        android:textColor="@color/putao_text_color_green"
+        android:text="@string/vehicle_info_setting" />
+
+</LinearLayout>

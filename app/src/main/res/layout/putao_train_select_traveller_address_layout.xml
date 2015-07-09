@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/putao_transparent"
+    >
+
+    <RelativeLayout
+        android:id="@+id/head_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/putao_app_bg" >
+        <include layout="@layout/putao_header_view" />
+    </RelativeLayout>
+     <Button
+        android:id="@+id/add_traveller"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/putao_express_item_height"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/putao_click_btn_bg"
+        android:text="@string/putao_traintriket_add_address"
+        android:textColor="@color/putao_white"
+        android:textSize="16sp"
+        >
+    </Button>
+    <so.contacts.hub.widget.MyListView
+        android:id="@+id/traveller_info_lv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/add_traveller"
+        android:layout_below="@id/head_layout"
+        android:background="@color/putao_transparent"
+        android:divider="@color/putao_transparent"
+        android:padding="10dp"
+        android:scrollbars="none"
+        android:scrollingCache="false"
+        android:verticalSpacing="15dp"
+        android:listSelector="@color/putao_transparent"
+        android:splitMotionEvents="false" >
+    </so.contacts.hub.widget.MyListView>
+</RelativeLayout>

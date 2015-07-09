@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/empty_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="gone"
+    android:orientation="vertical" >
+
+    <include layout="@layout/putao_open_play_list_item_head"/>
+
+    <RelativeLayout
+        android:id="@id/empty_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <ImageView
+            android:id="@+id/empty_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/putao_about_us"
+            android:src="@drawable/putao_icon_coolui_empty" />
+
+        <TextView
+            android:id="@id/empty_tip_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/empty_icon"
+            android:layout_marginTop="@dimen/putao_empty_view_icon_and_text_padding"
+            android:text="@string/putao_netexception_hint"
+            android:textColor="@color/putao_empty_tip_text"
+            android:textSize="@dimen/putao_empty_tip_text_size" />
+    </RelativeLayout>
+
+    <include layout="@layout/putao_movie_bottom_layout" />
+
+</LinearLayout>

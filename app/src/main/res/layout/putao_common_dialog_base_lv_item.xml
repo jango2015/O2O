@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/text1"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/putao_normal_item_height"
+    android:paddingLeft="16dp"
+    android:background="@drawable/putao_list_selecter_s"
+    android:textSize="@dimen/putao_dialog_content_textsize"
+    android:textColor="@color/putao_dialog_content"
+    android:gravity="center_vertical"/>

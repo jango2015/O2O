@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="putao_traffic_query_area">查询地区</string>
+    <string name="putao_traffic_commit">提交</string>
+    <string name="putao_traffic_select">请点击选择</string>
+    <string name="putao_traffic_car_number">车牌号码</string>
+    <string name="putao_traffic_edit_hint_input_car_number">请输入车牌号</string>
+    <string name="putao_traffic_engine_number">发动机号</string>
+    <string name="putao_traffic_frame_number">车架号</string>
+    <string name="putao_traffic_input_engine_number">请输入发动机号后6位</string>
+    <string name="putao_traffic_input_frame_number">请输入车架号后6位</string>
+    <string name="putao_traffic_empty_no_car_info">当前还没有添加车辆信息</string>
+    <string name="putao_traffic_detail_title">违章信息</string>
+    <string name="putao_traffic_detail_carnumber">车牌</string>
+    <string name="putao_traffic_detail_punish_money">罚款:%s</string>
+</resources>

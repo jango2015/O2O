@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="putao_phone_title_array"> 
+        <item>Home</item> 
+        <item>Mobile</item> 
+        <item>Work</item>
+        <item>Work Fax</item>
+        <item>Home Fax</item>
+        <item>Pager</item>
+        <item>Other</item>
+        <item>Callback number</item>
+        <item>Custom</item>    
+    </string-array>
+    <string-array name="putao_self_add_array">
+        <item>Email</item>
+        <item>Work Email</item>
+        <item>Mobile Email</item>
+        <item>Other Email</item>
+        <item>Custom</item>
+    </string-array> 
+    <string-array name="putao_website_title_array">
+        <item>Web</item>
+        <item>Web</item>
+    </string-array>
+    <string-array name="putao_address_title_array">
+        <item>Home</item>
+        <item>Work</item>
+        <item>Other</item>
+<!--         <item>Other</item> -->
+    </string-array>
+        <string-array name="putao_special_expresses">
+        <item>常用</item>
+        <item>顺丰,sf</item>
+        <item>申通,sto</item>
+        <item>EMS,ems</item>
+        <item>韵达,yd</item>
+        <item>圆通,yt</item>
+        <item>中通,zt</item>
+        <item>全部</item>
+    </string-array>
+    <string-array name="putao_organization_title_array">
+        <item>Company</item>
+        <item>School</item>
+        <item>Other</item>
+        <item>Custom</item>
+    </string-array>
+    <string-array name="putao_head_setting_options"> 
+        <item>Take Photo</item> 
+        <item>Choose Photo</item> 
+        <item>Remove Photo</item> 
+       <!--  <item>Recommend Photo</item>  -->
+    </string-array> 
+    <!-- <string-array name="putao_array_add_info"> 
+        <item>昵称</item>
+        <item>生日</item>
+        <item>纪念日</item>
+        <item>爱好</item>
+        <item>地址</item>
+        <item>籍贯</item>
+        <item>备注</item>
+        <item>自定义</item>
+    </string-array> 
+    -->
+    <!--  <item>生日</item>
+        <item>纪念日</item>
+        <item>铃声</item>
+        <item>爱好</item> -->
+    <!-- <string-array name="putao_array_add_work">
+    	<item>公司</item>
+    	<item>学校</item>
+    	<item>其他</item>
+        <item>自定义</item>
+    </string-array>
+    <string-array name="putao_array_add_network"> 
+        <item>Email</item> 
+        <item>网站</item>
+        <item>QQ</item>
+        <item>MSN</item>
+        <item>新浪</item>
+        <item>开心</item>
+        <item>人人</item>
+        <item>Gtalk</item>
+        <item>Skype</item>
+        <item>雅虎</item>
+        <item>旺旺</item>
+        <item>自定义</item>
+    </string-array>
+    <string-array name="putao_array_add_type">
+    	<item>添加联系人</item> -->
+    	<!--  <item>添加分组</item>-->
+    	<!--<item>添加企业(商户)</item>
+    </string-array>
+    -->
+    <string-array name="putao_photo">
+    	<item>Take Photo</item>
+    	<item>Choose Photo</item><!-- 采用已有照片 -->
+    	<!--  <item>Recommend Photo</item>-->
+    </string-array>
+    <string-array name="putao_photo_new">
+    	<item>Take Photo</item>
+    	<item>Choose Photo</item> 
+    </string-array>
+    <!--<string-array name="putao_arrray_add_business">
+    	<item>别称</item>
+    	<item>地址</item>-->
+    	<!--  <item>铃声</item>-->
+    	<!--<item>自定义</item>
+    </string-array>-->
+    <string-array name="putao_hobby_select">
+    	<item>Music</item>
+    	<item>Sports</item>
+    	<item>Movie</item>
+    	<item>Shopping</item>
+    	<item>Digital</item>
+    	<item>Food and beverage</item>
+    	<item>Hairdressing</item>
+    	<item>Travel</item>
+    	<item>Relaxation</item>
+    </string-array>
+    <string-array name="putao_item_name_array">
+        <item>Phone</item>
+    	<item>Email</item>
+    	<item>URL</item>
+    	<item>Account</item>
+    	<item>Adress</item>
+    	<item>Nickname</item>
+    	<item>Native place</item>
+    	<item>Birthday</item>
+    	<item>Memorial Day</item>
+    	<item>Organization</item>
+    	<item>Notes</item>
+    	<item>Related Contact</item>
+    	<item>Group</item>
+    	<item>Ringtone</item>
+    </string-array>
+    <string-array name="putao_item_shop_array">
+    	<item>Web</item>
+    	<item>Birthday</item>
+    	<item>Notes</item>
+    </string-array>
+  <string-array name="putao_special_cities">
+        <item>热门城市</item>
+        <item>北京</item>
+        <item>上海</item>
+        <item>广州</item>
+        <item>深圳</item>
+        <item>全部城市</item>
+    </string-array>
+    <string-array name="putao_item_sougou_mark">
+        <item>推销</item>
+    	<item>中介</item>
+    	<item>同事</item>
+    	<item>朋友</item>
+    	<item>快递</item>
+    	<item>外卖</item>
+    	<item>诈骗</item>
+    </string-array>
+
+</resources>

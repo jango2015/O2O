@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/putao_listview_item_height"
+    android:paddingLeft="@dimen/putao_express_item_padding"
+    android:paddingRight="@dimen/putao_express_item_padding">
+    <FrameLayout 
+        android:id="@+id/right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true">
+        <ImageView 
+            android:id="@+id/delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/putao_bg_btn_cancle"
+            android:contentDescription="@string/putao_about_us"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:textSize="@dimen/putao_bus_text_size"/>
+
+    </FrameLayout>
+    <TextView 
+        android:id="@+id/content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:textSize="@dimen/putao_bus_text_size"
+        android:layout_toLeftOf="@id/right"/>
+
+</RelativeLayout>

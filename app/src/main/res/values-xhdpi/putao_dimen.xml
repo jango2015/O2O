@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--     <dimen name="putao_guide_circle_d">40dip</dimen> -->
+<!--     <dimen name="putao_widget_height">176dip</dimen> -->
+<!--     <dimen name="putao_widget_default_height">138dip</dimen> -->
+    <dimen name="putao_divider_line_size">1px</dimen>
+    
+    <dimen name="putao_homepage_search_layout_height">36dip</dimen>
+    <dimen name="putao_homepage_searchtop_padding">8dip</dimen>
+    <dimen name="putao_homepage_searchleftright_padding">16dip</dimen>
+    <dimen name="putao_homepage_searchbottom_padding">14dp</dimen>
+    
+    <!-- 列表项 -->
+    <dimen name="putao_listview_item_height">54dip</dimen> 
+    <dimen name="putao_listview_item_leftrightpadding">10dp</dimen> 
+    <dimen name="putao_popwin_listview_item_leftrightpadding">8dp</dimen> 
+    <dimen name="putao_listview_item_topbottompadding">28dip</dimen> 
+    <dimen name="putao_listview_item_imgsize">40dip</dimen> 
+    <!-- 圖片icon與內容之間的間距 -->
+    <dimen name="putao_listview_item_imgcontentgap">16dip</dimen><!-- coolui6.0规范list item内容距离图片为16dp --> 
+    <dimen name="putao_listview_item_hot_icon_margin_right">8dip</dimen> 
+    <dimen name="putao_listview_firstline_textsize">16sp</dimen> <!--列表项第一行字体大小 -->
+    <dimen name="putao_listview_secondline_textsize">12sp</dimen> <!--列表项第二行字体大小 --><!-- modify for COOLUI6.0 -->
+    <dimen name="putao_listview_thirdline_textsize">12sp</dimen>
+    
+    <!-- 多行列表项item高度 -->
+    <dimen name="putao_listview_multirow_item_height">64dp</dimen>
+    <dimen name="putao_listview_multirow_item_imgsize">40dp</dimen> <!-- modify for COOLUI6.0 -->
+    <dimen name="putao_image_round_corner">6dp</dimen>
+    
+    <!-- 对话框 标准 -->
+    <dimen name="putao_dialog_leftandright_padding">16dp</dimen>
+    <dimen name="putao_dialog_leftandright_padding_small">12dp</dimen>
+    <dimen name="putao_dialog_head_height">64dp</dimen>
+    <dimen name="putao_dialog_head_textsize">14sp</dimen>
+    <dimen name="putao_dialog_content_minheight">64dp</dimen>
+    <dimen name="putao_dialog_content_maxheight">360dp</dimen>
+    <dimen name="putao_dialog_content_textsize">16sp</dimen>
+    <dimen name="putao_dialog_content_textsize_small">12dp</dimen>
+    <dimen name="putao_dialog_content_topandbottom_padding">14dp</dimen>
+    <dimen name="putao_dialog_content_topandbottom_padding_small">10dp</dimen>
+    <dimen name="putao_dialog_bottom_height">80dp</dimen>
+    <dimen name="putao_dialog_bottom_btn_height">36dp</dimen>
+    <dimen name="putao_dialog_bottom_btn_textsize">14dp</dimen>
+    <dimen name="putao_dialog_padding_bigscreen">18dp</dimen>
+    <dimen name="putao_dialog_padding_smallscreen">8dp</dimen>
+    
+    
+    <!-- 通讯录+ 字体标准 -->
+    <dimen name="putao_navigator_title">16sp</dimen>
+    <dimen name="putao_title">16sp</dimen>
+    <dimen name="putao_contentTitle">17sp</dimen>
+    <dimen name="putao_content">14sp</dimen>
+    <dimen name="putao_subtitle_content">10sp</dimen>
+    <dimen name="putao_subContent">12sp</dimen>
+    <dimen name="putao_snsCommenSize">16sp</dimen>
+    <dimen name="putao_snsContent">16sp</dimen>
+    <dimen name="putao_largeSize">30sp</dimen>
+    <dimen name="putao_middleSize">23sp</dimen>
+    <dimen name="putao_contentTitle_for_tips">16sp</dimen>
+    <dimen name="putao_allTitle">13sp</dimen>
+    <dimen name="putao_simTextFilterSize">20sp</dimen>
+    <dimen name="putao_simTextLargeSize">8sp</dimen>
+    <dimen name="putao_simTextMidSize">11sp</dimen>
+    <dimen name="putao_simTextSmallSize">4sp</dimen>
+    <dimen name="putao_BottomTextSize">15sp</dimen>
+    <dimen name="putao_mobile_action">22sp</dimen>
+    
+    <dimen name="putao_contactSnsIconSize">8dip</dimen>
+    <dimen name="putao_roomPadding">30dip</dimen>
+    <dimen name="putao_big_weibo_sns_w">50dip</dimen>
+    <dimen name="putao_big_weibo_sns_h">50dip</dimen>
+    <!--2013.10.22 zwj add for 拨号按钮上的图片高度,因为图片是正方形，所以只需要一个值-->
+    <dimen name="putao_imgDialSmallSize">13dip</dimen>
+    <dimen name="putao_imgDialLargeSize">40dip</dimen>
+    
+    <!-- 头部、底部高度标准 -->
+    <dimen name="putao_edit_profile_mobile_height">70dip</dimen>
+    <dimen name="putao_title_top_bar_hight">59dip</dimen>
+    <!-- putao_lhq modify for CoolUI6.0 start -->
+    <!-- <dimen name="putao_title_bar_hight">44dip</dimen> -->
+    <dimen name="putao_title_bar_hight">48dip</dimen>
+    <!-- putao_lhq modify for CoolUI6.0 end -->
+    <dimen name="putao_title_bar_bg_hight">51dip</dimen> 
+    <dimen name="putao_tab_bar_hight">38dip</dimen>
+    <dimen name="putao_bottom_bar_hight">70dip</dimen>
+    <dimen name="putao_info_btn_width">54dp</dimen>
+    <dimen name="putao_guide_bottom_padding_hight">10dip</dimen> 
+    <dimen name="putao_tittle_padding">4dip</dimen>
+    <dimen name="putao_sns_margin">8dip</dimen>
+    <dimen name="putao_title_bar_back_layout_width">48dip</dimen>
+    <dimen name="putao_title_bar_back_arrow_widthandheight">24dip</dimen>
+    <dimen name="putao_title_bar_back_padding_left">8dip</dimen>
+    <dimen name="putao_title_bar_back_padding_right">8dip</dimen>
+    <dimen name="putao_title_bar_icon_padding_left_text">-6dp</dimen>
+    
+    <!-- 各个列表高度标准 -->
+    <dimen name="putao_list_item_height_2">68dip</dimen>
+    <dimen name="putao_list_item_height">68dip</dimen>
+    <dimen name="putao_normal_item_height">48dp</dimen> 
+    <dimen name="putao_large_item_height">68dip</dimen> 
+    <dimen name="putao_divider_line_left">68.33dp</dimen>
+    <dimen name="putao_divider_line_height">38dp</dimen>
+    <dimen name="putao_divider_line_height2">42dp</dimen>
+    <dimen name="putao_divider_line_height3">60dp</dimen>
+    <dimen name="putao_list_padding_height">14dip</dimen>
+    <dimen name="putao_account_item_height">60dip</dimen>
+    
+    <!-- 列表分组高度 -->
+    <dimen name="putao_list_section_height">25dip</dimen>
+    
+    <!-- 联系人详情 名片 -->
+    <dimen name="putao_contact_group_item_padding">10dp</dimen>
+    <dimen name="putao_friend_update_item_padding">10dp</dimen>
+    
+    <!-- 圈子 选择联系人 Gallery -->
+    <dimen name="putao_gallery_item_width">48dp</dimen>
+    <dimen name="putao_gallery_item_height">54dp</dimen>
+    <dimen name="putao_gallery_spacing">0dp</dimen>
+    <dimen name="putao_gallery_item_text_size">28sp</dimen>
+    
+    <!-- 圈子资料 圈子成员标准高度 -->
+    <dimen name="putao_grid_view_column_with">60dp</dimen>
+    <dimen name="putao_grid_view_column_height">80dp</dimen>
+    <dimen name="putao_grid_view_spacing">10dip</dimen>
+    
+    <!-- 圈子聊天 -->
+    <dimen name="putao_msg_text_size">16sp</dimen>
+    <dimen name="putao_msg_img">73dip</dimen>
+    <dimen name="putao_msg_love_img">40dip</dimen>
+    <dimen name="putao_msg_item_min_height">40dip</dimen>
+    <dimen name="putao_send_img_list_height">40dip</dimen>
+    <dimen name="putao_send_img_list_item_height">34dip</dimen>
+    <dimen name="putao_msg_loading_pro_bar_height">25dip</dimen>
+    <dimen name="putao_msg_text_loading_pro_bar_height">15dip</dimen>
+    <dimen name="putao_msg_item_max_width">200dip</dimen>
+    
+    <dimen name="putao_ChattingContentMinHeight">45.0dip</dimen>
+    
+    <!-- 扩展坞 -->
+    <dimen name="putao_contatcs_docking_item_height">60dip</dimen>
+    <dimen name="putao_contatcs_docking_photo_height">200dip</dimen>
+    <dimen name="putao_contatcs_docking_item_text_size_big">20sp</dimen>
+    <dimen name="putao_contatcs_docking_item_number_size_big">22sp</dimen>
+    <dimen name="putao_contatcs_docking_item_text_size_small">14sp</dimen>
+    <dimen name="putao_edit_contacts_height">150dip</dimen>
+
+    <!-- 表情 -->
+    <dimen name="putao_big_face">30dip</dimen>
+    <dimen name="putao_small_face">20dip</dimen>
+    
+    
+    <!--  -->
+    <dimen name="putao_confirm_with">85dp</dimen>
+    <dimen name="putao_contacts_head_height">26dp</dimen>
+    <dimen name="putao_diapad_search_listview_item_height">70dp</dimen>
+    
+    <dimen name="putao_chat_img_width_limit">130dip</dimen>
+    <dimen name="putao_chat_img_height_limit">130dip</dimen>
+    
+    <!-- 动态图片最大长宽和最小长宽尺寸 -->
+    <dimen name="putao_image_threshold">150dip</dimen>
+    <dimen name="putao_multi_image_threshold">80dip</dimen>
+    <dimen name="putao_image_spacing">2dip</dimen>
+    
+    <!-- 名片的头像大小 -->
+    <dimen name="putao_icon_w">100dip</dimen>
+    <dimen name="putao_icon_h">100dip</dimen>
+    
+    <dimen name="putao_head_bg_h">160dip</dimen>
+    <dimen name="putao_weiboshow_h">360dip</dimen>
+    <dimen name="putao_batch_head_h">55dip</dimen>
+    
+    <!-- 热度雷达 -->
+    <dimen name="putao_hotradar_item_width">55dp</dimen>
+    <dimen name="putao_hotradar_item_height">55dp</dimen>
+    
+    <dimen name="putao_hotradar_head_width">45dp</dimen>
+    <dimen name="putao_hotradar_head_height">45dp</dimen>
+    
+    <dimen name="putao_hotradar_small_head_width">35dp</dimen>
+    <dimen name="putao_hotradar_small_head_height">35dp</dimen>
+    
+    <dimen name="putao_hotradar_circle1_right_move">22dip</dimen>
+    <dimen name="putao_hotradar_circle1_PointY">130dip</dimen>
+    <dimen name="putao_hotradar_circle1_radius">95dip</dimen>
+    
+    <dimen name="putao_hotradar_circle2_right_move">22dip</dimen>
+    <dimen name="putao_hotradar_circle2_PointY">200dip</dimen>
+    <dimen name="putao_hotradar_circle2_radius">165dip</dimen>
+    
+    <dimen name="putao_hotradar_circle3_right_move">22dip</dimen>
+    <dimen name="putao_hotradar_circle3_PointY">270dip</dimen>
+    <dimen name="putao_hotradar_circle3_radius">235dip</dimen>
+
+    <dimen name="putao_head_w_h">58dp</dimen>
+    <dimen name="putao_tips_head_w_h">36dp</dimen>
+    <dimen name="putao_acount_head_w_h">38dp</dimen>
+    <dimen name="putao_sns_head_w_h">43dp</dimen>
+    <dimen name="putao_edit_head_w_h">83dp</dimen>
+    <dimen name="putao_head_head_small">29dp</dimen>
+
+    <dimen name="putao_check_box_padding_right">36dp</dimen>
+    
+    <!-- 应用推荐 -->
+    <dimen name="putao_app_image_gallery_width">128dip</dimen>
+    <dimen name="putao_app_image_gallery_height">180dip</dimen>
+    <dimen name="putao_app_image_gallery_spacing">5dip</dimen>
+    <dimen name="putao_padding_for_edit_contacts">5dip</dimen>
+    
+    <!--  button height -->
+    <dimen name="putao_button_height">36dip</dimen>
+    <dimen name="putao_button_height_1">60dip</dimen>
+    <dimen name="putao_item_button_height">36dip</dimen>
+    <dimen name="putao_edit_height">35dip</dimen> 
+    <dimen name="putao_edit_other_height">35dip</dimen>
+    <dimen name="putao_v_split_line_height">53dip</dimen>
+    
+    <!-- guide height -->
+    <dimen name="putao_guid_height">45dip</dimen>
+    <dimen name="putao_margin_top_for_guide">10dp</dimen>
+    <dimen name="putao_margin_left_for_guide_status">15dp</dimen>
+    <dimen name="putao_margin_right_for_guide_status_filter">45dp</dimen>
+    <dimen name="putao_margin_left_for_guide">40dp</dimen>
+    <dimen name="putao_margin_for_guide_bottom">5dip</dimen>
+    
+    <dimen name="putao_index_bar_width">30dp</dimen>
+    <dimen name="putao_dial_icon_height">55dip</dimen>
+    <dimen name="putao_index_tip_margin_top">50dip</dimen>
+    <dimen name="putao_margin_for_line">10dip</dimen>
+    
+    <dimen name="putao_cloud_timestamp_height">150dip</dimen>
+    
+    <dimen name="putao_button_grid_layout_button_height">60dip</dimen>
+    <dimen name="putao_btn_mark_w">93dip</dimen>
+    <dimen name="putao_btn_mark_h">100dip</dimen>
+    
+    <dimen name="putao_prompt_digit_w_h">20dp</dimen>
+    
+    <!-- 黄页plug -->
+    <dimen name="putao_yp_home_font_size">16dp</dimen>
+    <dimen name="putao_yp_item_padding">5dp</dimen>
+    <dimen name="putao_yp_item_left_padding">10dp</dimen>
+    <dimen name="putao_yp_item_right_padding">20dp</dimen>
+    <dimen name="putao_yp_item_width">75dp</dimen>
+    <dimen name="putao_yp_detail_move_min">80dp</dimen>
+    <dimen name="putao_yp_detail_head_height">250dp</dimen>
+    <dimen name="putao_yp_detail_item_title_size">16sp</dimen>
+    <dimen name="putao_yp_detail_item_first_text_size">16sp</dimen>
+    <dimen name="putao_yp_detail_item_second_text_size">12sp</dimen>
+    <dimen name="putao_yp_detail_item_height">60dp</dimen>
+    <dimen name="putao_yp_detail_spaceitem_height">35dp</dimen>
+    <dimen name="putao_yp_detail_item_image_size">81dp</dimen><!-- modify 125dp to 81dp for coolui6.0 -->
+    <dimen name="putao_yp_detail_customs_height">125dp</dimen>
+    <dimen name="putao_yp_detail_reviews_height">95dp</dimen>
+    <dimen name="putao_yp_detail_customs_img_width">90dp</dimen>
+    <dimen name="putao_yp_detail_customs_img_height">90dp</dimen>
+    
+    <dimen name="putao_yp_home_gridview_textsize">12sp</dimen>
+    <dimen name="putao_yp_home_second_item_height">52dp</dimen>
+    <dimen name="putao_yp_home_listview_item_margin_left">7dp</dimen>
+    <dimen name="putao_yp_home_listview_item_margin_right">7dp</dimen>
+    <dimen name="putao_yp_home_listview_hot_icon_margin_left">3dp</dimen>
+    <dimen name="putao_yp_home_listview_textsize">14sp</dimen>
+    
+    <dimen name="putao_activity_horizontal_margin">16dp</dimen>
+    <dimen name="putao_activity_vertical_margin">16dp</dimen>
+    
+    <!-- 查快递 -->
+    <dimen name="putao_express_item_height">50dip</dimen>
+    <dimen name="putao_express_item_margin_top">15dip</dimen>
+    <dimen name="putao_express_item_text_size">18sp</dimen>
+    <dimen name="putao_express_item_padding">10dip</dimen>
+    <dimen name="putao_express_scan_btn_width">77dip</dimen>
+    <dimen name="putao_express_result_exp_info_title_padding">28dip</dimen>
+    <dimen name="putao_express_result_no_data_item_margin">8dip</dimen>
+    <dimen name="putao_express_result_no_data_info_text_size">14sp</dimen>
+    <dimen name="putao_express_result_try_again_btn_width">180dip</dimen>
+    <dimen name="putao_express_result_try_again_btn_height">45dip</dimen>
+    <dimen name="putao_express_result_try_again_text_size">18sp</dimen>
+    <dimen name="putao_express_result_no_data_margin_top">85dip</dimen>
+    <dimen name="putao_express_result_item_status_height">70dip</dimen>
+    <dimen name="putao_express_result_item_height">60dip</dimen>
+    <dimen name="putao_express_result_item_height_x">70dip</dimen>
+    <dimen name="putao_express_result_item_padding">20dip</dimen>
+    <dimen name="putao_express_result_item_content_text_size">13dip</dimen>
+    <dimen name="putao_express_result_item_date_text_size">12dip</dimen>
+    <dimen name="putao_express_result_footer_view_height">70dip</dimen>
+    <dimen name="putao_express_history_title_size">13sp</dimen>
+    <dimen name="putao_express_history_item_height">68dip</dimen>
+    <dimen name="putao_express_history_item_title_text_size">13sp</dimen>
+    <dimen name="putao_express_history_item_number_text_size">10sp</dimen>
+    <dimen name="putao_express_history_item_status_text_size">10sp</dimen>
+    <dimen name="putao_express_history_item_margin">7dip</dimen>
+    <dimen name="putao_express_history_delete_select_all_text_size">10sp</dimen>
+    <dimen name="putao_express_source_company_text_size">11sp</dimen>
+    <!-- 地图 -->
+    <dimen name="putao_map_item_height">110dp</dimen>
+    <dimen name="putao_map_item_info_height">54dp</dimen>
+    <dimen name="putao_map_item_btn_text_size">16dp</dimen>
+    <dimen name="putao_map_item_btn_margin">9dp</dimen>
+    <dimen name="putao_map_item_btn_gap_margin">18dp</dimen>
+    <dimen name="putao_map_item_divider_margin">13dp</dimen>
+    
+    <!-- 流量验证码窗口 -->
+    <dimen name="putao_traffic_window_title_padding_left">5dp</dimen>
+    <dimen name="putao_traffic_window_body_height">80dp</dimen>
+    <dimen name="putao_traffic_window_foot_height">50dp</dimen>
+    <dimen name="putao_traffic_window_foot_button_height">40dp</dimen>
+    <dimen name="putao_traffic_window_foot_button_width">120dp</dimen>
+    <dimen name="putao_traffic_window_foot_button_margin_middle">15dp</dimen>
+    <dimen name="putao_traffic_window_edittext_height">40dp</dimen>
+    <dimen name="putao_traffic_window_edittext_width">280dp</dimen>
+    <dimen name="putao_traffic_window_title_size">20sp</dimen>
+    
+    <!-- 提醒中心 -->
+    <dimen name="putao_message_center_item_margin">8dp</dimen>
+    
+    <dimen name="putao_hotle_item_height">54dip</dimen><!-- add by hyl 2014-12-20 for COOLUI6.0 -->
+    
+    <!-- 打點字體大小 -->
+    <dimen name="putao_remind_textsize">4dp</dimen>
+    
+    <dimen name="putao_hotel_img_size">80dp</dimen>
+    
+
+    
+</resources>

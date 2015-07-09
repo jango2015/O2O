@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<dimen name="putao_game_name_size">20dp</dimen>
+    <dimen name="putao_list_item_height_3">75dip</dimen>
+    <dimen name="putao_notify_msg">14sp</dimen>
+    
+</resources>	

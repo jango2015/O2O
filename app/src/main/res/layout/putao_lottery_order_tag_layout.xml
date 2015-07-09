@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:background="@drawable/putao_bg_card_caipiao"
+    android:orientation="vertical" >
+
+    <include layout="@layout/putao_my_order_item_head" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="96dp" >
+
+        <TextView
+            android:id="@+id/lottery_result_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="16dp"
+            android:text="@string/lottery_result_hint"
+            android:textColor="@color/putao_order_list_subcontent_color"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/lottery_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/lottery_result_hint"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="3dp"
+            android:textColor="@color/putao_order_list_content_color"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/lottery_time_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/lottery_result"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/lottery_time_hint"
+            android:textColor="@color/putao_order_list_subcontent_color"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/lottery_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/lottery_time_hint"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="3dp"
+            android:textColor="@color/putao_order_list_content_color"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/lottery_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+             />
+    </RelativeLayout>
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/putao_my_order_item_foot"
+        android:layout_marginTop="7dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp" />
+
+</LinearLayout>

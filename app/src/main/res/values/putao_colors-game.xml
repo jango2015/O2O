@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <color name="putao_game_auth_bg">#ebebeb</color>
+    <color name="putao_game_down_font">#5e5e5e</color>
+    <color name="putao_gray">#cdcdcd</color>
+    <color name="putao_darkgray">#aaaaaa</color>
+    
+    <color name="putao_game_list_title_green">#4db602</color>
+    <color name="putao_game_shadow_font">#7a7a7a</color>
+    
+</resources>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/travellerinfo_item_layout"
+    android:layout_width="match_parent"
+    android:layout_height="80dp" >
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:focusable="false" />
+
+    <LinearLayout
+        android:id="@+id/travellerinfo_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/checkBox"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/traveller_name"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="姓名" 
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/traveller_id"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+			android:gravity="center_vertical"
+            android:text="身份证:"
+            android:textColor="@android:color/background_dark" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/edit_travellerinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:textColor="#aa428211"
+        android:text="编辑" 
+        android:focusable="false"/>
+
+</RelativeLayout>

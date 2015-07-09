@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/name_layout"
+            style="@style/putao_List_SINGLE_ITEM_Style"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|left"
+                android:text="@string/putao_traintriket_username" />
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/putao_listview_item_imgcontentgap"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:hint="@string/putao_traintriket_hint"
+                android:imeOptions="actionSearch"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/phone_layout"
+            style="@style/putao_List_SINGLE_ITEM_Style"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|left"
+                android:text="@string/putao_traintriket_phone" />
+
+            <EditText
+                android:id="@+id/phone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/putao_listview_item_imgcontentgap"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:hint="@string/putao_traintriket_hint"
+                android:imeOptions="actionSearch"
+                android:inputType="number"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/address_layout"
+            style="@style/putao_List_SINGLE_ITEM_Style"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|left"
+                android:text="@string/putao_traintriket_district" />
+
+            <TextView
+                android:id="@+id/address_select"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="@dimen/putao_listview_item_imgcontentgap"
+                android:drawablePadding="8dp"
+                android:drawableRight="@drawable/putao_icon_list_down"
+                android:background="@drawable/putao_edit_bg_grey"
+                android:singleLine="true"
+                android:text="@string/putao_traintriket_click"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/addressdetail_layout"
+            style="@style/putao_List_SINGLE_ITEM_Style"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|left"
+                android:text="@string/putao_traintriket_detailaddress" />
+
+            <EditText
+                android:id="@+id/detail_address"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/putao_listview_item_imgcontentgap"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:hint="@string/putao_traintriket_hint"
+                android:imeOptions="actionSearch" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_traveller_commit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/putao_btn_margin_size"
+        android:text="@string/putao_yellow_page_error_collect_commit" >
+    </Button>
+
+    <Button
+        android:id="@+id/bt_traveller_delete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/putao_btn_margin_size"
+        android:layout_marginRight="@dimen/putao_btn_margin_size"
+        android:background="@drawable/putao_click_btn_bg_white"
+        android:text="@string/putao_traintriket_delete_address"
+        android:textColor="@color/putao_text_color_importance" 
+        android:visibility="gone">
+    </Button>
+
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/feedback_content"
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:layout_margin="16dp"
+        android:gravity="top|left"
+        android:hint="@string/putao_yellow_page_my_user_feedback_hint"
+        android:imeOptions="actionSearch"
+        android:inputType="textMultiLine"
+        android:lineSpacingExtra="4dp"
+        android:lines="6"
+        android:padding="5dp"
+        android:singleLine="true"
+        android:textColorHint="@color/putao_pt_deep_gray">
+    </EditText>
+
+    <EditText
+        android:id="@+id/et_phone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:gravity="center_vertical"
+        android:hint="@string/putao_yellow_page_my_user_feedback_phone"
+        android:imeOptions="actionSearch"
+        android:padding="5dp"
+        android:singleLine="true"
+        android:textColorHint="@color/putao_pt_deep_gray">
+    </EditText>
+
+    <Button
+        android:id="@+id/bt_commit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/putao_yellow_page_error_collect_commit" />
+
+</LinearLayout>

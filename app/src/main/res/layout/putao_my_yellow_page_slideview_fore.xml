@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/yellow_page_img_item"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="@dimen/putao_offen_imgview_margintop"
+    android:contentDescription="@string/putao_about_us"
+    android:src="@drawable/putao_icon_quick_replace" />

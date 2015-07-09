@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/putao_white" >
+
+    <LinearLayout
+        android:id="@+id/head_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/putao_app_bg" >
+
+        <include layout="@layout/putao_header_view" />
+    </LinearLayout>
+
+    <so.contacts.hub.widget.CustomListView
+        android:id="@+id/hotel_orderhistory_list"
+        style="@style/putao_ListStyle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/head_layout"
+        android:background="@color/putao_transparent"
+        android:divider="@color/putao_yellow_page_line_color"
+        android:dividerHeight="@dimen/putao_divider_line_size"
+        android:fadingEdgeLength="0dp"
+        android:scrollbars="none"
+        android:splitMotionEvents="false" />
+
+    <LinearLayout
+        android:id="@+id/network_exception_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/head_layout"
+        android:visibility="gone" >
+
+        <include layout="@layout/putao_network_exception_layout" />
+    </LinearLayout>
+
+</RelativeLayout>
